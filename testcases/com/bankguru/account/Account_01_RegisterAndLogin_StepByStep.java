@@ -73,7 +73,7 @@ public class Account_01_RegisterAndLogin_StepByStep {
 	}
   @AfterClass
   public void afterClass() {
-	  
+	  driver.quit();
   }
 
 }
