@@ -30,40 +30,30 @@ public class Account_01_RegisterAndLogin_StepByStep {
   @Test
   public void TC_01_RegisterToSystem() {
 	  
-	  System.out.println("Registe - Step 1: Click to here link");
 	  driver.findElement(By.xpath("//a[text()='here']")).click();
 	  
-	  System.out.println("Registe - Step 2: Input to mail");
 	  driver.findElement(By.name("emailid")).sendKeys(email);
 	  
-	  System.out.println("Registe - Step 3: Click Submit button");
 	  driver.findElement(By.name("btnLogin")).click();
 	  
-	  System.out.println("Registe - Step 4: Get username/ password");
 	  username = driver.findElement(By.xpath("//td[text()='User ID :']/following-sibling::td")).getText();
 	  password = driver.findElement(By.xpath("//td[text()='Password :']/following-sibling::td")).getText();
-	  
 	  
   }
   @Test
   public void TC_02_LoginToSystem() {
 	  
 	 
-	  System.out.println("Login - Step 1: Open Login Page");
 	  driver.get(loginPageUrl);
 	  
-	  System.out.println("Login - Step 2: Input username/ password"); 
 	  driver.findElement(By.name("uid")).sendKeys(username);
 	  driver.findElement(By.name("password")).sendKeys(password);
 	  
-	  System.out.println("Login - Step 3: Click Login button"); 
 	  driver.findElement(By.name("btnLogin")).click();
 	  
-	  System.out.println("Login - Step 4: Verify text Welcome"); 
 	  String welcome = driver.findElement(By.xpath("//marquee")).getText();
 	  Assert.assertEquals(welcome, "Welcome To Manager's Page of Guru99 Bank");
 	  
-	  System.out.println("Login - Step 5: Verify text ID"); 
 	  Assert.assertTrue(driver.findElement(By.xpath("//td[text()='Manger Id : "+ username +"']")).isDisplayed());
 	  
   }
