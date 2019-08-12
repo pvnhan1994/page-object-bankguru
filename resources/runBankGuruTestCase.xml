@@ -3,8 +3,8 @@
  
   <test name="Run on FIREFOX">
     <classes>
-      <class name="com.bankguru.account.Account_02_RegisterAndLogin_AbstractPage_01"/>
-       <class name="com.bankguru.account.Account_02_RegisterAndLogin_AbstractPage_02"/>
+      <class name="com.bankguru.account.Account_03_RegisterAndLogin_PageObjectPattern"/>
+      
     </classes>
   </test> 
   
