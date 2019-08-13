@@ -6,15 +6,17 @@ import commons.AbstractPage;
 import pageUIs.LoginPageUI;
 
 public class LoginPageObject extends AbstractPage {
-	WebDriver driver;
-
+	 WebDriver driver;
+	public LoginPageObject(WebDriver mappingDriver) {
+		driver = mappingDriver;
+	}
 	public String getLoginPageUrl() {
 		return getCurrentPageUrl(driver);
 	}
 
 	public void clickToHereLink() {
-		waitForElementVisible(driver, LoginPageUI.USER_ID_TEXTBOX);
-		clickToElement(driver, LoginPageUI.USER_ID_TEXTBOX);
+		waitForElementVisible(driver, LoginPageUI.HERE_LINK);
+		clickToElement(driver, LoginPageUI.HERE_LINK);
 	}
 
 	public void inputToUsernameTextbox(String username) {

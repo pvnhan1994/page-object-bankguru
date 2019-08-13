@@ -6,7 +6,10 @@ import commons.AbstractPage;
 import pageUIs.RegisterPageUI;
 
 public class RegisterPageObject extends AbstractPage {
-	WebDriver driver;
+	 WebDriver driver;
+	public RegisterPageObject(WebDriver mappingDriver) {
+		driver = mappingDriver;
+	}
 	public void inputToEmailTetxt(String email) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
 		sendkeyElement(driver, RegisterPageUI.EMAIL_TEXTBOX, email);
