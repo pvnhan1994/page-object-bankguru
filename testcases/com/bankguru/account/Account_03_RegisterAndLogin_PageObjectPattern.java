@@ -31,6 +31,7 @@ public class Account_03_RegisterAndLogin_PageObjectPattern{
 		homePage = new HomePageObject();
 		//Get login Page Url
 		loginPageUrl = loginPage.getLoginPageUrl();
+		//
 	}
 
 	@Test
@@ -73,6 +74,8 @@ public class Account_03_RegisterAndLogin_PageObjectPattern{
 
 	@AfterClass
 	public void afterClass() {
+		
+		
 		driver.quit();
 	}
 
