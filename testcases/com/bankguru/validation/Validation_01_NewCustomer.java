@@ -13,13 +13,11 @@ import pageObjects.NewCustomerPageObject;
 
 public class Validation_01_NewCustomer {
 	WebDriver driver;
-	String email;
 	NewCustomerPageObject newCustomerPage;
 	@BeforeClass
 	public void beforeClass() {
 		driver = new FirefoxDriver();
 		newCustomerPage = new NewCustomerPageObject(driver);
-		email = "binvnese" + randomDataTest() + "@gmail.com";
 		driver.get("http://demo.guru99.com/v4/manager/addcustomerpage.php");
 	}
 
@@ -172,6 +170,7 @@ public class Validation_01_NewCustomer {
 		newCustomerPage.clearDataTelephoneTextbox();
 		newCustomerPage.inputToMobilePhoneTextbox("123&&123");
 		Assert.assertTrue(newCustomerPage.ValidateTelephoneCannotHaveSpecialCharacter());
+		
 	}
 	@Test
 	public void TC_26_EmailCannotBeEmpty() {
@@ -192,12 +191,6 @@ public class Validation_01_NewCustomer {
 	@Test
 	public void TC_30_CheckAllFieldsName() {
 
-	}
-	
-	
-	public int randomDataTest() {
-		Random random = new Random();
-		return random.nextInt(99999);
 	}
 
 	@AfterClass

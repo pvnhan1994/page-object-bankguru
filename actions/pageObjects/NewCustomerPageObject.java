@@ -315,4 +315,9 @@ public class NewCustomerPageObject extends AbstractPage {
 		return isControlDisplayed(driver, NewCustomerPageUI.VALIDATE_EMAIL_INCORRECT);
 	}
 
+	public String getTextCustomerID() {
+		waitForElementVisible(driver, NewCustomerPageUI.GET_TEXT_CUSTOMER_ID);
+		return getTextElement(driver, NewCustomerPageUI.GET_TEXT_CUSTOMER_ID);
+	}
+
 }

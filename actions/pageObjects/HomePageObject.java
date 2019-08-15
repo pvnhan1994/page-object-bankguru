@@ -23,6 +23,10 @@ public class HomePageObject extends AbstractPage{
 		String actual = getTextElement(driver,HomePageUI.USERID_TEXT);
 		return actual.contains(expected);
 	}
+	public void clickEditCustomer() {
+		waitForElementVisible(driver, HomePageUI.EDIT_CUSTOMER_LINK);
+		clickToElement(driver, HomePageUI.EDIT_CUSTOMER_LINK);
+	}
 	
 	
 
