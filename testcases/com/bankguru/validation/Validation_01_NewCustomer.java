@@ -1,7 +1,5 @@
 package com.bankguru.validation;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -145,10 +143,7 @@ public class Validation_01_NewCustomer {
 		newCustomerPage.inputToPinTextbox(" 123");
 		Assert.assertTrue(newCustomerPage.ValidatePinCannotHaveFirstBlankSpace());
 	}
-//	@Test
-//	public void TC_21_PinCannotHaveBlankSpace() {
-//
-//	}
+
 	@Test
 	public void TC_22_TelephoneCannotBeEmpty() {
 		newCustomerPage.sendKeyTabToTelephone();
@@ -189,9 +184,7 @@ public class Validation_01_NewCustomer {
 		Assert.assertTrue(newCustomerPage.ValidateEmailMustBeInCorrectFormat());
 	}
 	@Test
-	public void TC_30_CheckAllFieldsName() {
 
-	}
 
 	@AfterClass
 	public void afterClass() {
