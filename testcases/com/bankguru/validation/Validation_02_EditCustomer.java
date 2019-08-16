@@ -1,5 +1,7 @@
 package com.bankguru.validation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -29,7 +31,8 @@ public class Validation_02_EditCustomer {
 		customerID = "51037";
 		
 		driver.get("http://demo.guru99.com/v4/");
-		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		loginPage = new LoginPageObject(driver);
 		homePage = new HomePageObject(driver);
 		editCustomerPage = new EditCustomerPageObject(driver);
@@ -167,7 +170,7 @@ public class Validation_02_EditCustomer {
 	@Test
 	public void TC_15_PinCannotBeEmpty() {
 		editCustomerPage.clearDataPinTextbox();
-		// editCustomerPage.sendKeyTabToPin();
+		editCustomerPage.sendKeyTabToPin();
 		Assert.assertTrue(editCustomerPage.ValidatePinCannotBeEmpty());
 	}
 
