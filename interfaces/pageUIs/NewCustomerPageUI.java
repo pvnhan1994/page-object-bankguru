@@ -58,4 +58,5 @@ public class NewCustomerPageUI {
 	public static final String VALIDATE_EMAIL_CANNOT_BE_EMPTY = "//label[@id='message9' and text()='Email-ID must not be blank']";
 	public static final String VALIDATE_EMAIL_INCORRECT = "//label[@id='message9' and text()='Email-ID is not valid']";
 	
+	public static final String REGISTER_SUCCESS_TEXT = "//p[@class='heading3' and text()='Customer Registered Successfully!!!']";
 }

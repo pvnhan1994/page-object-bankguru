@@ -4,8 +4,8 @@
   <test name="Run on FIREFOX">
     <classes>
 <!--       <class name="com.bankguru.account.Account_05_RegisterAndLogin_PageGenerator"/> -->
-      <class name="com.bankguru.validation.Validation_01_NewCustomer"/>
-      
+<!--       <class name="com.bankguru.validation.Validation_01_NewCustomer"/> -->
+      		<class name="com.bankguru.payment.Payment01"/>
     </classes>
   </test> 
   

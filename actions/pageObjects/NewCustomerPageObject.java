@@ -320,4 +320,9 @@ public class NewCustomerPageObject extends AbstractPage {
 		return getTextElement(driver, NewCustomerPageUI.GET_TEXT_CUSTOMER_ID);
 	}
 
+	public boolean isRegisterSuccessfullyTextDisplayed() {
+		waitForElementVisible(driver, NewCustomerPageUI.REGISTER_SUCCESS_TEXT);
+		return isControlDisplayed(driver, NewCustomerPageUI.REGISTER_SUCCESS_TEXT);
+	}
+
 }

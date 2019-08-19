@@ -18,6 +18,7 @@ WebDriver driver;
 		clickToElement(driver, EditCustomerPageUI.SUBMIT_BUTTON);
 		
 	}
+	
 	public void sendKeyTabToCustomerID() {
 		waitForElementVisible(driver, EditCustomerPageUI.CUSTOMER_ID_TEXTBOX);
 		sendKeyboardToElement(driver, EditCustomerPageUI.CUSTOMER_ID_TEXTBOX, Keys.TAB);
@@ -68,6 +69,11 @@ WebDriver driver;
 		waitForElementVisible(driver, EditCustomerPageUI.VALIDATE_ADDRESS_CANNOT_BE_EMPTY);
 		return isControlDisplayed(driver, EditCustomerPageUI.VALIDATE_ADDRESS_CANNOT_BE_EMPTY);
 	
+	}
+	public void inputAddressTextbox(String address) {
+		waitForElementVisible(driver, EditCustomerPageUI.ADDRESS_TEXTAREA);
+		sendkeyElement(driver, EditCustomerPageUI.ADDRESS_TEXTAREA,address);
+		
 	}
 
 	public void clearDataCityTextbox() {
@@ -247,7 +253,15 @@ WebDriver driver;
 		waitForElementVisible(driver, EditCustomerPageUI.TEXT_EDIT_CUSTOMER_FORM);
 		return isControlDisplayed(driver, EditCustomerPageUI.TEXT_EDIT_CUSTOMER_FORM);
 	}
-
+	public void clickToButtonSubmitEdit() {
+		waitForElementVisible(driver, EditCustomerPageUI.SUBMIT_EDIT_BUTTON);
+		clickToElement(driver, EditCustomerPageUI.SUBMIT_EDIT_BUTTON);
+	}
+	public boolean isEditSuccessfullyTextDisplayed() {
+		waitForElementVisible(driver, EditCustomerPageUI.EDIT_SUCCESS_TEXT);
+		return isControlDisplayed(driver, EditCustomerPageUI.EDIT_SUCCESS_TEXT);
+	}
+	
 	
 
 
