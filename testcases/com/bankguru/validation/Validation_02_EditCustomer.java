@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import commons.PageGeneratorManager;
 import pageObjects.EditCustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
@@ -33,8 +34,8 @@ public class Validation_02_EditCustomer {
 		driver.get("http://demo.guru99.com/v4/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		loginPage = new LoginPageObject(driver);
-		homePage = new HomePageObject(driver);
+		loginPage = PageGeneratorManager.getLoginPage(driver);
+		//homePage = new HomePageObject(driver);
 		editCustomerPage = new EditCustomerPageObject(driver);
 	}
 
@@ -42,7 +43,7 @@ public class Validation_02_EditCustomer {
 	public void LoginToSystem() {
 		loginPage.inputToUsernameTextbox(username);
 		loginPage.inputToPasswordTextbox(password);
-		loginPage.clickToLoginButton();
+		homePage = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isWelcomeMessageDisplayed("Welcome To Manager's Page of Guru99 Bank"));
 		Assert.assertTrue(homePage.isUserIDDisplayed(username));
 		homePage.clickEditCustomer();
@@ -50,7 +51,7 @@ public class Validation_02_EditCustomer {
 
 	@Test
 	public void NavigateToEditCustomerPage() {
-		homePage.clickEditCustomer();
+		editCustomerPage = homePage.clickEditCustomer();
 		Assert.assertTrue(editCustomerPage.isTextEditCustomerDisplayed());
 	}
 

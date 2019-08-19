@@ -7,6 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import commons.PageGeneratorManager;
 import pageObjects.NewCustomerPageObject;
 
 public class Validation_01_NewCustomer {
@@ -15,7 +16,7 @@ public class Validation_01_NewCustomer {
 	@BeforeClass
 	public void beforeClass() {
 		driver = new FirefoxDriver();
-		newCustomerPage = new NewCustomerPageObject(driver);
+		newCustomerPage = PageGeneratorManager.getNewCustomerPage(driver);
 		driver.get("http://demo.guru99.com/v4/manager/addcustomerpage.php");
 	}
 

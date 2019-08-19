@@ -3,7 +3,8 @@
  
   <test name="Run on FIREFOX">
     <classes>
-      <class name="com.bankguru.account.Account_04_RegisterAndLogin_Selenium_PageFactory"/>
+<!--       <class name="com.bankguru.account.Account_05_RegisterAndLogin_PageGenerator"/> -->
+      <class name="com.bankguru.validation.Validation_01_NewCustomer"/>
       
     </classes>
   </test> 
