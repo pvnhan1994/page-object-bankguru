@@ -2,9 +2,12 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.DepositPageObject;
+import pageObjects.EditAccountPageObject;
 import pageObjects.EditCustomerPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
 
@@ -26,4 +29,14 @@ public class PageGeneratorManager {
 	public static EditCustomerPageObject getEditCustomerPage (WebDriver driver) {
 		return new EditCustomerPageObject(driver);
 	}
+	public static NewAccountPageObject getNewAccountPage (WebDriver driver) {
+		return new NewAccountPageObject(driver);
+	}
+	public static EditAccountPageObject getEditAccountPage (WebDriver driver) {
+		return new EditAccountPageObject(driver);
+	}
+	public static DepositPageObject getDepositPage (WebDriver driver) {
+		return new DepositPageObject(driver);
+	}
+	
 }

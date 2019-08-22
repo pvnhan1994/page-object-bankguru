@@ -13,6 +13,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.DepositPageObject;
+import pageObjects.EditAccountPageObject;
+import pageObjects.HomePageObject;
+import pageObjects.NewAccountPageObject;
+
 public class AbstractPage {
 
 	public void openUrl(WebDriver driver, String urlValue) {
@@ -295,8 +300,27 @@ public class AbstractPage {
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
 	}
 	
-	
-
+	//PageUI
+	public NewAccountPageObject openNewAccountPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
+		clickToElement(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
+		return PageGeneratorManager.getNewAccountPage(driver);
+	}
+	public EditAccountPageObject openEditAccountPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.EDIT_ACCOUNT_LINK);
+		clickToElement(driver, AbstractPageUI.EDIT_ACCOUNT_LINK);
+		return PageGeneratorManager.getEditAccountPage(driver);
+	}
+	public DepositPageObject openDepositPage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.DEPOSIT_LINK);
+		clickToElement(driver, AbstractPageUI.DEPOSIT_LINK);
+		return PageGeneratorManager.getDepositPage(driver);
+	}
+	public HomePageObject openHomePage(WebDriver driver) {
+		waitForElementVisible(driver, AbstractPageUI.MANAGER_LINK);
+		clickToElement(driver, AbstractPageUI.MANAGER_LINK);
+		return PageGeneratorManager.getHomePage(driver);
+	}
 	private WebElement element;
 	private List<WebElement> elements;
 	private Select select;
