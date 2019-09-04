@@ -70,20 +70,28 @@ public class AbstractPage {
 		element.click();
 	}
 
+	public void clickToElement(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		element.click();
+	}
+
 	public void sendkeyElement(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
 		element.sendKeys(value);
 	}
+
 	public void clearDataElement(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		element.clear();
 	}
+
 	public void selectItemInDropDown(WebDriver driver, String locator, String itemText) {
 		element = driver.findElement(By.xpath(locator));
 		select = new Select(element);
 		select.selectByVisibleText(itemText);
 	}
-	
+
 	public String getSelectedItemInDropdown(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		select = new Select(element);
@@ -148,6 +156,12 @@ public class AbstractPage {
 	}
 
 	public boolean isControlDisplayed(WebDriver driver, String locator) {
+		element = driver.findElement(By.xpath(locator));
+		return element.isDisplayed();
+	}
+
+	public boolean isControlDisplayed(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
 	}
@@ -277,50 +291,90 @@ public class AbstractPage {
 			return false;
 		}
 	}
-	
+
 	public void waitForElementPresence(WebDriver driver, String locator) {
-		waitExplicit = new WebDriverWait(driver,30);
+		waitExplicit = new WebDriverWait(driver, 30);
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.presenceOfElementLocated(byLocator));
 	}
+
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		waitExplicit = new WebDriverWait(driver,30);
+		waitExplicit = new WebDriverWait(driver, 30);
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
 	}
+
+	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		waitExplicit = new WebDriverWait(driver, 30);
+		byLocator = By.xpath(locator);
+		waitExplicit.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
+	}
+
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		waitExplicit = new WebDriverWait(driver,30);
+		waitExplicit = new WebDriverWait(driver, 30);
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.elementToBeClickable(byLocator));
-		
+
 	}
+
 	public void waitForElementInvisible(WebDriver driver, String locator) {
-		waitExplicit = new WebDriverWait(driver,30);
+		waitExplicit = new WebDriverWait(driver, 30);
 		byLocator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
 	}
-	
-	//PageUI
+
+	// PageUI
 	public NewAccountPageObject openNewAccountPage(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
 		clickToElement(driver, AbstractPageUI.NEW_ACCOUNT_LINK);
 		return PageGeneratorManager.getNewAccountPage(driver);
 	}
+
 	public EditAccountPageObject openEditAccountPage(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUI.EDIT_ACCOUNT_LINK);
 		clickToElement(driver, AbstractPageUI.EDIT_ACCOUNT_LINK);
 		return PageGeneratorManager.getEditAccountPage(driver);
 	}
+
 	public DepositPageObject openDepositPage(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUI.DEPOSIT_LINK);
 		clickToElement(driver, AbstractPageUI.DEPOSIT_LINK);
 		return PageGeneratorManager.getDepositPage(driver);
 	}
+
 	public HomePageObject openHomePage(WebDriver driver) {
 		waitForElementVisible(driver, AbstractPageUI.MANAGER_LINK);
 		clickToElement(driver, AbstractPageUI.MANAGER_LINK);
 		return PageGeneratorManager.getHomePage(driver);
 	}
+
+	// 15> 20 Pages
+	public AbstractPage openMultiPage(WebDriver driver, String pagename) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
+
+		switch (pagename) {
+
+		case "New Account":
+			return PageGeneratorManager.getNewAccountPage(driver);
+		case "Edit Account":
+			return PageGeneratorManager.getEditAccountPage(driver);
+		case "New Customer":
+			return PageGeneratorManager.getNewCustomerPage(driver);
+		case "Edit Customer":
+			return PageGeneratorManager.getEditCustomerPage(driver);
+		default:
+			return PageGeneratorManager.getHomePage(driver);
+
+		}
+	}
+	// 100> pages
+	public void openMultiPages(WebDriver driver, String pagename) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
+	}
+
 	private WebElement element;
 	private List<WebElement> elements;
 	private Select select;
