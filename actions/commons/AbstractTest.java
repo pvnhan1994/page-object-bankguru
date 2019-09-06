@@ -18,12 +18,12 @@ public class AbstractTest {
 		} else if (browserName.equalsIgnoreCase("chromeheadless")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
-			options.addArguments("window-size=1366x768");
+			options.addArguments("window-size="+Constants.HEADLESS_RESOLUTION);
 			driver = new ChromeDriver(options);
 		} else {
 			System.out.println("Please choose your browser name in TestNG xml");
 		}
-		driver.get("http://demo.guru99.com/v4/");
+		driver.get(Constants.TEST_LINK);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		return driver;
