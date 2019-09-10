@@ -25,7 +25,7 @@ public class AbstractTest {
 		}
 		driver.get(Constants.TEST_LINK);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		return driver;
 	}
 

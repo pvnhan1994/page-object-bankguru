@@ -1,7 +1,9 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -165,7 +167,30 @@ public class AbstractPage {
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
 	}
-
+	public boolean isControlUndisplayed(WebDriver driver, String locator) {
+		Date date = new Date();
+		System.out.println("Start time=" + date.toString());
+		
+		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
+		
+		List<WebElement> elements = driver.findElements(By.xpath(locator));
+		
+		if(elements.size() == 0) {
+			System.out.println("Element not in DOM");
+			System.out.println("End time = "+ new Date().toString());
+			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
+			return true;
+		}else if(elements.size()> 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Element in DOM but not visible/ displayed");
+			System.out.println("End time = " + new Date().toString());
+			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
+			return true;
+		}else {
+			System.out.println("Element in DOM and visible");
+			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
+			return false;
+		}
+	}
 	public boolean isControlSelected(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		return element.isSelected();
@@ -319,9 +344,21 @@ public class AbstractPage {
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator) {
+		Date date = new Date();
 		waitExplicit = new WebDriverWait(driver, longTimeOut);
 		byLocator = By.xpath(locator);
+		
+		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
+		System.out.println("Start time for wait invisible = " +date.toString());
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
+		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
+		System.out.println("End time for wait invisible = " + new Date().toString());
+		overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
+		
+	}
+	
+	public void overrideGlobalTimeOut(WebDriver driver, int timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 
 	// PageUI

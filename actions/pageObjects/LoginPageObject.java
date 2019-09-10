@@ -36,5 +36,30 @@ public class LoginPageObject extends AbstractPage {
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
 		return PageGeneratorManager.getHomePage(driver);
 	}
+	public boolean isLoginPageDisplayed() {
+		waitForElementVisible(driver, LoginPageUI.USER_ID_TEXTBOX);
+		return isControlDisplayed(driver, LoginPageUI.USER_ID_TEXTBOX);
+	}
+	public boolean isHomePageUndisplayed() {
+		waitForElementInvisible(driver, LoginPageUI.WELCOME_MSG_AT_HOME_PAGE);
+		return isControlUndisplayed(driver, LoginPageUI.WELCOME_MSG_AT_HOME_PAGE);
+	}
+	public boolean isRegisterPageUndisplayed() {
+		waitForElementInvisible(driver, LoginPageUI.EMAIL_TEXTBOX_AT_REGISTER_PAGE);
+		return isControlUndisplayed(driver, LoginPageUI.EMAIL_TEXTBOX_AT_REGISTER_PAGE);
+	}
+	
+	public boolean isDeleteCustomerFormLinkUnDisplayed() {
+		waitForElementInvisible(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
+		return isControlUndisplayed(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
+	}
+	public void clickSeleniumToogle() {
+		waitForElementVisible(driver, LoginPageUI.SELENIUM_TOOGLE);
+		clickToElement(driver, LoginPageUI.SELENIUM_TOOGLE);
+	}
+	public boolean isDeleteCustomerFormLinkDisplayed() {
+		waitForElementVisible(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
+		return isControlDisplayed(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
+	}
 
 }
