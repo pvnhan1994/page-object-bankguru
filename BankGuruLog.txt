@@ -1,0 +1,11 @@
+2019-09-17 21:43:50,103 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 1 Verify login page is displayed
+2019-09-17 21:43:50,220 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
+2019-09-17 21:43:50,222 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 2 Verify delete customer form is not displayed
+2019-09-17 21:43:50,329 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
+2019-09-17 21:43:50,329 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 3 Click Selenium toogle
+2019-09-17 21:43:50,454 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 4 Verify delete customer form is displayed
+2019-09-17 21:43:50,505 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
+2019-09-17 21:43:50,505 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 5 Verify Home Page is not displayed
+2019-09-17 21:43:54,688 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
+2019-09-17 21:43:54,688 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 6 Verify Register Page is not displayed
+2019-09-17 21:43:58,757 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==

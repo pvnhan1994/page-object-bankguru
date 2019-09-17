@@ -168,21 +168,21 @@ public class AbstractPage {
 		return element.isDisplayed();
 	}
 	public boolean isControlUndisplayed(WebDriver driver, String locator) {
-		Date date = new Date();
-		System.out.println("Start time=" + date.toString());
+//		Date date = new Date();
+//		System.out.println("Start time=" + date.toString());
 		
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
 		
 		List<WebElement> elements = driver.findElements(By.xpath(locator));
 		
 		if(elements.size() == 0) {
-			System.out.println("Element not in DOM");
-			System.out.println("End time = "+ new Date().toString());
+//			System.out.println("Element not in DOM");
+//			System.out.println("End time = "+ new Date().toString());
 			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 			return true;
 		}else if(elements.size()> 0 && !elements.get(0).isDisplayed()) {
-			System.out.println("Element in DOM but not visible/ displayed");
-			System.out.println("End time = " + new Date().toString());
+//			System.out.println("Element in DOM but not visible/ displayed");
+//			System.out.println("End time = " + new Date().toString());
 			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 			return true;
 		}else {
@@ -344,15 +344,15 @@ public class AbstractPage {
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator) {
-		Date date = new Date();
+//		Date date = new Date();
 		waitExplicit = new WebDriverWait(driver, longTimeOut);
 		byLocator = By.xpath(locator);
 		
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
-		System.out.println("Start time for wait invisible = " +date.toString());
+//		System.out.println("Start time for wait invisible = " +date.toString());
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
-		System.out.println("End time for wait invisible = " + new Date().toString());
+//		System.out.println("End time for wait invisible = " + new Date().toString());
 		overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 		
 	}

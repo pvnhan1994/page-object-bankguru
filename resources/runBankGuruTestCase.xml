@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="BANK GURU" parallel="false" >
  
+ 
+ 	<listeners>
+ 		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+ 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ 		<listener class-name="commons.ExtentReportListener"/>
+ 	</listeners>
   <test name="Run on FIREFOX">
 	<parameter name="browser" value="firefox"></parameter>
     <classes>
-      		<class name="com.bankguru.account.Account_09_RegisterAndLogin_ElementUndisplayed"/>
+      		<class name="com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML"/>
     </classes>
   </test> 
   
