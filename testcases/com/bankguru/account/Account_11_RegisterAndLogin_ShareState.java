@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.bankguru.commons.Commons_01_RegisterToSystem;
+
 import commons.AbstractTest;
 import commons.PageGeneratorManager;
 import pageObjects.DepositPageObject;
@@ -21,10 +23,9 @@ import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Account_10_RegisterAndLogin_Verify_Log_ReportHTML extends AbstractTest {
+public class Account_11_RegisterAndLogin_ShareState extends AbstractTest {
 
 	WebDriver driver;
-	String email, username, password, loginPageUrl;
 	
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
@@ -36,44 +37,37 @@ public class Account_10_RegisterAndLogin_Verify_Log_ReportHTML extends AbstractT
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		
 		driver = openMultiBrowser(browserName);
-		
-		email = "binvnese" + randomDataTest() + "@gmail.com";
-		
-		
 		loginPage = PageGeneratorManager.getLoginPage(driver);
+
+		log.info("LOGIN - STEP 1: Input username");
+		loginPage.inputToUsernameTextbox(Commons_01_RegisterToSystem.USERNAME);
+	
+		log.info("LOGIN - STEP 2: Input password");
+		loginPage.inputToPasswordTextbox(Commons_01_RegisterToSystem.PASSWORD);
 		
+		log.info("LOGIN - STEP 3: Click Button");
+		homePage = loginPage.clickToLoginButton();
+		
+		log.info("LOGIN - STEP 4: Verify Welcome Msg displayed");
+		Assert.assertTrue(homePage.isWelcomeMessageDisplayed("Welcome To Manager's Page of Guru99 Bank"));
+		
+		log.info("LOGIN - STEP 5: Verify USERID displayed");
+		Assert.assertTrue(homePage.isUserIDDisplayed(Commons_01_RegisterToSystem.USERNAME));
+	
 	}
+
 
 	@Test
-	public void TC_01_RegisterToSystem() {
-		//System.out.println("REGISTER - STEP: 1.1 Verify login page is displayed");
-		log.info("REGISTER - STEP: 1 Verify login page is displayed");
-		verifyTrue(loginPage.isLoginPageDisplayed());
-
-		log.info("REGISTER - STEP: 2 Verify delete customer form is not displayed");
-		verifyTrue(loginPage.isDeleteCustomerFormLinkUnDisplayed());
-
-		log.info("REGISTER - STEP: 3 Click Selenium toogle");
-		loginPage.clickSeleniumToogle();
-		//Demo fail
-		log.info("REGISTER - STEP: 4 Verify delete customer form is displayed");
-		//Assert.assertTrue(loginPage.isDeleteCustomerFormLinkDisplayed());
-		verifyTrue(loginPage.isDeleteCustomerFormLinkDisplayed());
-		
-		log.info("REGISTER - STEP: 5 Verify Home Page is not displayed");
-		verifyTrue(loginPage.isHomePageUndisplayed());
-
-		log.info("REGISTER - STEP: 6 Verify Register Page is not displayed");
-		verifyTrue(loginPage.isRegisterPageUndisplayed());
-		
-		
+	public void TC_02_LoginToSystem() {
 	}
-
-
 	
-
+	@Test
+	public void TC_03_LoginToSystem() {
+	}
+	@Test
+	public void TC_04_LoginToSystem() {
+	}
 	@AfterClass
 	public void afterClass() {
 

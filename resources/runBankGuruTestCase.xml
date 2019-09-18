@@ -10,7 +10,8 @@
   <test name="Run on FIREFOX">
 	<parameter name="browser" value="firefox"></parameter>
     <classes>
-      		<class name="com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML"/>
+    		<class name="com.bankguru.commons.Commons_01_RegisterToSystem"/>
+      		<class name="com.bankguru.account.Account_11_RegisterAndLogin_ShareState"/>
     </classes>
   </test> 
   

@@ -1,11 +1,11 @@
-2019-09-17 21:43:50,103 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 1 Verify login page is displayed
-2019-09-17 21:43:50,220 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
-2019-09-17 21:43:50,222 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 2 Verify delete customer form is not displayed
-2019-09-17 21:43:50,329 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
-2019-09-17 21:43:50,329 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 3 Click Selenium toogle
-2019-09-17 21:43:50,454 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 4 Verify delete customer form is displayed
-2019-09-17 21:43:50,505 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
-2019-09-17 21:43:50,505 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 5 Verify Home Page is not displayed
-2019-09-17 21:43:54,688 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
-2019-09-17 21:43:54,688 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - REGISTER - STEP: 6 Verify Register Page is not displayed
-2019-09-17 21:43:58,757 INFO  com.bankguru.account.Account_10_RegisterAndLogin_Verify_Log_ReportHTML - ===PASSED==
+2019-09-18 21:26:17,101 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
+2019-09-18 21:26:17,212 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
+2019-09-18 21:26:17,214 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
+2019-09-18 21:26:17,335 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
+2019-09-18 21:26:20,201 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
+2019-09-18 21:26:21,985 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
+2019-09-18 21:26:29,265 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 1: Input username
+2019-09-18 21:26:29,429 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 2: Input password
+2019-09-18 21:26:29,648 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 3: Click Button
+2019-09-18 21:26:30,146 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 4: Verify Welcome Msg displayed
+2019-09-18 21:26:32,310 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 5: Verify USERID displayed

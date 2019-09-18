@@ -1,5 +1,6 @@
 package commons;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -19,7 +20,7 @@ public class AbstractTest {
 		log = LogFactory.getLog(getClass());
 	}
 
-	public WebDriver openMultiBrowser(String browserName) {
+	protected WebDriver openMultiBrowser(String browserName) {
 
 		if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
@@ -112,5 +113,9 @@ public class AbstractTest {
 
 	protected boolean verifyEquals(Object actual, Object expected) {
 		return checkEquals(actual, expected);
+	}
+	protected int randomDataTest() {
+		Random random = new Random();
+		return random.nextInt(99999);
 	}
 }
