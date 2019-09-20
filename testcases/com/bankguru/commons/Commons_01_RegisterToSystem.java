@@ -53,7 +53,7 @@ public class Commons_01_RegisterToSystem extends AbstractTest {
 		USERNAME = registerPage.getUsernameInformation();
 		PASSWORD = registerPage.getPasswordInformation();
 	
-		driver.quit();
+		closeBrowserAndDriver(driver);
 	}
 
 
