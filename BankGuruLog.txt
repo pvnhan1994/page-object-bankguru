@@ -1,11 +1,134 @@
-2019-09-18 21:26:17,101 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
-2019-09-18 21:26:17,212 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
-2019-09-18 21:26:17,214 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
-2019-09-18 21:26:17,335 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
-2019-09-18 21:26:20,201 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
-2019-09-18 21:26:21,985 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
-2019-09-18 21:26:29,265 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 1: Input username
-2019-09-18 21:26:29,429 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 2: Input password
-2019-09-18 21:26:29,648 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 3: Click Button
-2019-09-18 21:26:30,146 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 4: Verify Welcome Msg displayed
-2019-09-18 21:26:32,310 INFO  com.bankguru.account.Account_11_RegisterAndLogin_ShareState - LOGIN - STEP 5: Verify USERID displayed
+2019-09-20 14:22:14,560 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
+2019-09-20 14:22:14,726 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
+2019-09-20 14:22:14,728 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
+2019-09-20 14:22:14,898 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
+2019-09-20 14:22:18,059 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
+2019-09-20 14:22:19,520 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
+2019-09-20 14:22:20,246 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - OS name = mac os x
+2019-09-20 14:22:20,440 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ---------- QUIT BROWSER SUCCESS ----------
+2019-09-20 14:22:26,753 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 1: Input username
+2019-09-20 14:22:26,905 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 2: Input password
+2019-09-20 14:22:27,122 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 3: Click Button
+2019-09-20 14:22:27,655 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 4: Verify Welcome Msg displayed
+2019-09-20 14:22:29,010 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:29,011 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 5: Verify USERID displayed
+2019-09-20 14:22:29,359 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:29,359 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 6: Open New Customer
+2019-09-20 14:22:30,829 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Press Tab and move to next Field
+2019-09-20 14:22:31,034 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Customer name must not be blank is displayed
+2019-09-20 14:22:31,109 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:31,115 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Input numberic value in Name Field
+2019-09-20 14:22:31,330 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Numbers are not allowed is displayed
+2019-09-20 14:22:31,525 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:31,525 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Clear data in Name Field
+2019-09-20 14:22:31,626 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Input numberic value in Name Field
+2019-09-20 14:22:31,888 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 5: Verify Numbers are not allowed is displayed
+2019-09-20 14:22:32,021 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:32,023 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME -  STEP 1: Clear data in Name Field
+2019-09-20 14:22:32,399 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME -  STEP 2: Input special chars into Name Field
+2019-09-20 14:22:32,503 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Verify Special chars are not allowed is displayed
+2019-09-20 14:22:32,574 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:32,574 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Clear data in Name Field
+2019-09-20 14:22:32,621 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 5: Input special chars into Name Field
+2019-09-20 14:22:32,710 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 6: Verify Special chars are not allowed is displayed
+2019-09-20 14:22:32,761 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:32,764 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Clear data in Name Field
+2019-09-20 14:22:32,841 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Dont input into Name Field
+2019-09-20 14:22:32,914 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Verify First chars cannot be space is displayed
+2019-09-20 14:22:32,965 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:32,967 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Dont input data into Address
+2019-09-20 14:22:33,203 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify Address cannot be empty is displayed
+2019-09-20 14:22:33,253 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:33,254 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Input Fisrt chars as blank space
+2019-09-20 14:22:33,344 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify First chars cannot be space is displayed
+2019-09-20 14:22:33,397 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:33,400 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Dont input data into City Field
+2019-09-20 14:22:33,580 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify City Field must be not blank
+2019-09-20 14:22:33,643 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:33,646 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Input numberic into City Field
+2019-09-20 14:22:33,729 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify Numbers are not allowed
+2019-09-20 14:22:33,794 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:33,794 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Clear data in Name Field
+2019-09-20 14:22:33,833 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Input numberic into City Field
+2019-09-20 14:22:33,943 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 5: Verify Numbers are not allowed
+2019-09-20 14:22:33,994 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:33,995 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field
+2019-09-20 14:22:34,051 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Input special chars into City Field
+2019-09-20 14:22:34,119 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Verify Special chars are not allowed is displayed
+2019-09-20 14:22:34,178 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:34,178 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Clear data in City Field
+2019-09-20 14:22:34,251 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 5: Input special chars into City Field
+2019-09-20 14:22:34,352 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 6: Verify Special chars are not allowed is displayed
+2019-09-20 14:22:34,419 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:34,420 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field
+2019-09-20 14:22:34,460 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Input data hava first Blank Space
+2019-09-20 14:22:34,536 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Verify First character cannot be space
+2019-09-20 14:22:34,602 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:34,603 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Dont input data into State Field
+2019-09-20 14:22:34,762 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify State must not be blank
+2019-09-20 14:22:34,813 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:34,814 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Input number into State Field
+2019-09-20 14:22:34,937 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify Numbers are not allowed is displayed
+2019-09-20 14:22:34,970 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:34,970 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Clear data in State Field
+2019-09-20 14:22:35,014 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Input number into State Field
+2019-09-20 14:22:35,125 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 5: Verify Numbers are not allowed is displayed
+2019-09-20 14:22:35,175 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:35,183 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Clear data in State Field
+2019-09-20 14:22:35,227 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Input Special Chras into State Field
+2019-09-20 14:22:35,312 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Verify State cannot have special chars is displayed
+2019-09-20 14:22:35,361 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:35,362 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Clear data in State Field
+2019-09-20 14:22:35,410 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 5: Input Special Chras into State Field
+2019-09-20 14:22:35,503 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 6:  Verify State cannot have special chars is displayed
+2019-09-20 14:22:35,572 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:35,574 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Clear data in State Field
+2019-09-20 14:22:35,621 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Input First blank space into State Field
+2019-09-20 14:22:35,702 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Verify State cannot have first blank space
+2019-09-20 14:22:35,764 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:35,766 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input not number into Pin Field
+2019-09-20 14:22:35,850 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must be numberic is displayed
+2019-09-20 14:22:35,904 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:35,906 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
+2019-09-20 14:22:35,954 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Dont input data into Pin Field
+2019-09-20 14:22:36,087 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot be Empty is displayed
+2019-09-20 14:22:36,133 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:36,135 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input less than 6 digits into Pin Field
+2019-09-20 14:22:36,212 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must have 6 digits is displayed
+2019-09-20 14:22:36,295 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:36,298 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
+2019-09-20 14:22:36,339 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Input special chars into Pin Field
+2019-09-20 14:22:36,415 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannt have special chars
+2019-09-20 14:22:36,466 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:36,468 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
+2019-09-20 14:22:36,530 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Input first blank space into Pin Field
+2019-09-20 14:22:36,637 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot have first blank space
+2019-09-20 14:22:36,708 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:36,709 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Dont input data into Telephone
+2019-09-20 14:22:36,855 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot be empty
+2019-09-20 14:22:36,906 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:36,907 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Input first blank space into Telephone Field
+2019-09-20 14:22:37,007 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot have first blank space
+2019-09-20 14:22:37,068 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:37,070 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in Telephone Field
+2019-09-20 14:22:37,119 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Input data have spaces into Telephone Field
+2019-09-20 14:22:37,206 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 3: Verify Telephone cannot have spaces
+2019-09-20 14:22:37,268 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:37,270 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in State Field
+2019-09-20 14:22:37,322 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Clear data in State Field
+2019-09-20 14:22:37,420 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 3: Clear data in State Field
+2019-09-20 14:22:37,458 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:37,459 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Dont input data into Email Field
+2019-09-20 14:22:37,626 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify email cannot be empty is displayed
+2019-09-20 14:22:37,670 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:37,671 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Clear data in Email Field
+2019-09-20 14:22:37,721 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Input invalid email into Email Field
+2019-09-20 14:22:37,820 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 3: Verify Email must be in correct format is displayed
+2019-09-20 14:22:37,876 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:37,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Input data have space into Mail
+2019-09-20 14:22:37,978 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify Email cannot have space is displayed
+2019-09-20 14:22:38,369 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-09-20 14:22:38,370 INFO  com.bankguru.validation.Validation_01_NewCustomer - OS name = mac os x
+2019-09-20 14:22:38,561 INFO  com.bankguru.validation.Validation_01_NewCustomer - ---------- QUIT BROWSER SUCCESS ----------
+2019-09-20 14:22:38,562 INFO  com.bankguru.validation.Validation_01_NewCustomer - OS name = mac os x
+2019-09-20 14:22:38,562 INFO  com.bankguru.validation.Validation_01_NewCustomer - ---------- QUIT BROWSER SUCCESS ----------

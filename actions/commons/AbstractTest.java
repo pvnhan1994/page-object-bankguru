@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -28,6 +29,9 @@ public class AbstractTest {
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+		} else if (browserName.equalsIgnoreCase("safari")) {
+			driver = new SafariDriver();
 		} else if (browserName.equalsIgnoreCase("chromeheadless")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("headless");
