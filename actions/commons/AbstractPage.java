@@ -82,12 +82,20 @@ public class AbstractPage {
 		element = driver.findElement(By.xpath(locator));
 		element.sendKeys(value);
 	}
-
+	public void sendkeyElement(WebDriver driver, String locator, String value, String...values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		element.sendKeys(value);
+	}
 	public void clearDataElement(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		element.clear();
 	}
-
+	public void clearDataElement(WebDriver driver, String locator, String...values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		element.clear();
+	}
 	public void selectItemInDropDown(WebDriver driver, String locator, String itemText) {
 		element = driver.findElement(By.xpath(locator));
 		select = new Select(element);
@@ -137,7 +145,11 @@ public class AbstractPage {
 		element = driver.findElement(By.xpath(locator));
 		return element.getText();
 	}
-
+	public String getTextElement(WebDriver driver, String locator, String... values) {
+		locator = String.format(locator, (Object[]) values);
+		element = driver.findElement(By.xpath(locator));
+		return element.getText();
+	}
 	public int countElementsNumber(WebDriver driver, String locator) {
 		elements = driver.findElements(By.xpath(locator));
 		return elements.size();
@@ -167,30 +179,32 @@ public class AbstractPage {
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
 	}
+
 	public boolean isControlUndisplayed(WebDriver driver, String locator) {
 //		Date date = new Date();
 //		System.out.println("Start time=" + date.toString());
-		
+
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
-		
+
 		List<WebElement> elements = driver.findElements(By.xpath(locator));
-		
-		if(elements.size() == 0) {
+
+		if (elements.size() == 0) {
 //			System.out.println("Element not in DOM");
 //			System.out.println("End time = "+ new Date().toString());
 			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 			return true;
-		}else if(elements.size()> 0 && !elements.get(0).isDisplayed()) {
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
 //			System.out.println("Element in DOM but not visible/ displayed");
 //			System.out.println("End time = " + new Date().toString());
 			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 			return true;
-		}else {
+		} else {
 			System.out.println("Element in DOM and visible");
 			overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
 			return false;
 		}
 	}
+
 	public boolean isControlSelected(WebDriver driver, String locator) {
 		element = driver.findElement(By.xpath(locator));
 		return element.isSelected();
@@ -256,7 +270,13 @@ public class AbstractPage {
 		action = new Actions(driver);
 		action.sendKeys(element, key).perform();
 	}
-
+	public void sendKeyboardToElement(WebDriver driver, String locator, Keys key, String...values) {
+		locator = String.format(locator,(Object[])values);
+		element = driver.findElement(By.xpath(locator));
+		action = new Actions(driver);
+		action.sendKeys(element, key).perform();
+	}
+	
 	public void executeForBrowser(WebDriver driver, String javaSript) {
 		javascriptExecutor = (JavascriptExecutor) driver;
 		javascriptExecutor.executeScript(javaSript);
@@ -347,16 +367,16 @@ public class AbstractPage {
 //		Date date = new Date();
 		waitExplicit = new WebDriverWait(driver, longTimeOut);
 		byLocator = By.xpath(locator);
-		
+
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
 //		System.out.println("Start time for wait invisible = " +date.toString());
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
 		overrideGlobalTimeOut(driver, Constants.SHORT_TIMEOUT);
 //		System.out.println("End time for wait invisible = " + new Date().toString());
 		overrideGlobalTimeOut(driver, Constants.LONG_TIMEOUT);
-		
+
 	}
-	
+
 	public void overrideGlobalTimeOut(WebDriver driver, int timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
@@ -406,12 +426,54 @@ public class AbstractPage {
 
 		}
 	}
+
 	// 100> pages
 	public void openMultiPages(WebDriver driver, String pagename) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
 		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
 	}
 
+	// Dynamic Page Object/ Page Element/ Page UI
+	public void inputToDynamicTextbox(WebDriver driver, String textboxNameID, String valueToSendKey) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, textboxNameID);
+		sendkeyElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, valueToSendKey,textboxNameID);
+	}
+
+	public void inputToDynamicTextArea(WebDriver driver, String textAreaNameID, String valueToSendKey) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, textAreaNameID);
+		sendkeyElement(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, valueToSendKey,textAreaNameID);
+	}
+
+	public void clickToDynamicRadioButton(WebDriver driver, String radioButtonNameValue) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_RADIO_BUTTON,radioButtonNameValue);
+		sendkeyElement(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, radioButtonNameValue);
+	}
+
+	public boolean isDynamicPageOrMessageDisplayed(WebDriver driver, String pageHeadingName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_HEADING, pageHeadingName);
+		return isControlDisplayed(driver, AbstractPageUI.DYNAMIC_PAGE_HEADING,pageHeadingName);
+	}
+	public String getDynamicTextInTable(WebDriver driver, String rowName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TABLE_ROW_NAME, rowName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_TABLE_ROW_NAME, rowName);
+		
+	}
+	public void pressTABToDynamicTextbox(WebDriver driver, String nameID) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
+		sendKeyboardToElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, Keys.TAB, nameID);
+	}
+	public void pressTABToDynamicTextArea(WebDriver driver, String nameID) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, nameID);
+		sendKeyboardToElement(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, Keys.TAB, nameID);
+	}
+	public void clearDynamicTextArea(WebDriver driver, String nameID) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, nameID);
+		clearDataElement(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, nameID);
+	}
+	public void clearDynamicTextbox(WebDriver driver, String nameID) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
+		clearDataElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
+	}
 	private WebElement element;
 	private List<WebElement> elements;
 	private Select select;

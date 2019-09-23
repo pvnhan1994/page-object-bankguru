@@ -46,174 +46,177 @@ public class Validation_01_NewCustomer extends AbstractTest {
 		verifyTrue(homePage.isUserIDDisplayed(Commons_01_RegisterToSystem.USERNAME));
 
 		log.info("LOGIN - STEP 6: Open New Customer");
-		newCustomerPage = homePage.clickNewCustomer();
-
+		//newCustomerPage = homePage.clickNewCustomer();
+		newCustomerPage = (NewCustomerPageObject) homePage.openMultiPage(driver, "New Customer");
 	}
 
 	@Test
-	public void TC_01_NameCannotBeEmpty() {
-
+	public void TC_01_NameCannotBeEmpty(){
+		
 		log.info("NEW CUSTOMER - NAME - STEP 1: Press Tab and move to next Field");
-		newCustomerPage.sendKeyTabToCustomerName();
+		newCustomerPage.pressTABToDynamicTextbox(driver, "name");
 
 		log.info("NEW CUSTOMER - NAME - STEP 2: Verify Customer name must not be blank is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameMustNotBeBlank());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"), "Customer name must not be blank");
 	}
 
 	@Test
 	public void TC_02_NameCannotBeNumeric() throws Exception {
 		log.info("NEW CUSTOMER - NAME - STEP 1: Input numberic value in Name Field");
-		newCustomerPage.inputToCustomerNameTextbox("1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "name", "1233");
 
 		log.info("NEW CUSTOMER - NAME - STEP 2: Verify Numbers are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"), "Numbers are not allowed");
 
 		log.info("NEW CUSTOMER - NAME - STEP 3: Clear data in Name Field");
-		newCustomerPage.clearDataCustomerNameTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "name");
 
 		log.info("NEW CUSTOMER - NAME - STEP 4: Input numberic value in Name Field");
-		newCustomerPage.inputToCustomerNameTextbox("1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "name", "12as33");
 
 		log.info("NEW CUSTOMER - NAME - STEP 5: Verify Numbers are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"), "Numbers are not allowed");
 	}
 
 	@Test
 	public void TC_03_NameCannotHaveSpecialChars() {
 		log.info("NEW CUSTOMER - NAME -  STEP 1: Clear data in Name Field");
-		newCustomerPage.clearDataCustomerNameTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "name");
 
 		log.info("NEW CUSTOMER - NAME -  STEP 2: Input special chars into Name Field");
-		newCustomerPage.inputToCustomerNameTextbox("@#");
+		newCustomerPage.inputToDynamicTextbox(driver, "name", "#@#@!");
 
 		log.info("NEW CUSTOMER - NAME - STEP 3: Verify Special chars are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"),
+				"Special characters are not allowed");
 
 		log.info("NEW CUSTOMER - NAME - STEP 4: Clear data in Name Field");
-		newCustomerPage.clearDataCustomerNameTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "name");
 
 		log.info("NEW CUSTOMER - NAME - STEP 5: Input special chars into Name Field");
-		newCustomerPage.inputToCustomerNameTextbox("abc#@");
+		newCustomerPage.inputToDynamicTextbox(driver, "name", "dsa@#@");
 
 		log.info("NEW CUSTOMER - NAME - STEP 6: Verify Special chars are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"),
+				"Special characters are not allowed");
 	}
 
 	@Test
 	public void TC_04_NameCannotHaveFirstCharsAsBlankSpace() {
 		log.info("NEW CUSTOMER - NAME - STEP 1: Clear data in Name Field");
-		newCustomerPage.clearDataCustomerNameTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "name");
 
 		log.info("NEW CUSTOMER - NAME - STEP 2: Dont input into Name Field");
-		newCustomerPage.inputToCustomerNameTextbox(" ");
+		newCustomerPage.inputToDynamicTextbox(driver, "name", "   ");
 
 		log.info("NEW CUSTOMER - NAME - STEP 3: Verify First chars cannot be space is displayed");
-		verifyTrue(newCustomerPage.ValidateCustomerNameCannotHaveFirstCharAsBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Customer Name"),
+				"First character can not have space");
 	}
 
 	@Test
 	public void TC_05_AddressCannotBeEmpty() {
 		log.info("NEW CUSTOMER - ADDRESS - STEP 1: Dont input data into Address");
-		newCustomerPage.sendKeyTabToAddress();
+		newCustomerPage.pressTABToDynamicTextArea(driver, "addr");
 
 		log.info("NEW CUSTOMER - ADDRESS - STEP 2: Verify Address cannot be empty is displayed");
-		verifyTrue(newCustomerPage.ValidateAddressCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Address"),"Address Field must not be blank");
 	}
 
 	@Test
 	public void TC_06_AddressCannotHaveFirstCharsAsBlankSpace() {
 		log.info("NEW CUSTOMER - ADDRESS - STEP 1: Input Fisrt chars as blank space");
-		newCustomerPage.inputToAddressTextarea(" ");
+		newCustomerPage.inputToDynamicTextArea(driver, "addr", " ");
 
 		log.info("NEW CUSTOMER - ADDRESS - STEP 2: Verify First chars cannot be space is displayed");
-		verifyTrue(newCustomerPage.ValidateAddressCannotHaveFirstCharAsBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Address"),"First character can not have space");
 	}
 
 	@Test
 	public void TC_08_CityCannotBeEmpty() {
 		log.info("NEW CUSTOMER - CITY - STEP 1: Dont input data into City Field");
-		newCustomerPage.sendKeyTabToCity();
+		newCustomerPage.pressTABToDynamicTextbox(driver, "city");
 
 		log.info("NEW CUSTOMER - CITY - STEP 2: Verify City Field must be not blank");
-		verifyTrue(newCustomerPage.ValidateCityCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"City Field must not be blank");
 	}
 
 	@Test
 	public void TC_09_CityCannotBeNumeric() {
 		log.info("NEW CUSTOMER - CITY - STEP 1: Input numberic into City Field");
-		newCustomerPage.inputToCityTextbox("1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "city", "123");
 
 		log.info("NEW CUSTOMER - CITY - STEP 2: Verify Numbers are not allowed");
-		verifyTrue(newCustomerPage.ValidateCityCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"Numbers are not allowed");
 
 		log.info("NEW CUSTOMER - CITY - STEP 3: Clear data in Name Field");
-		newCustomerPage.clearDataCityTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "city");
 
 		log.info("NEW CUSTOMER - CITY - STEP 4: Input numberic into City Field");
-		newCustomerPage.inputToCityTextbox("city1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "city", "abc123");
 
 		log.info("NEW CUSTOMER - CITY - STEP 5: Verify Numbers are not allowed");
-		verifyTrue(newCustomerPage.ValidateCityCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"Numbers are not allowed");
 	}
 
 	@Test
 	public void TC_10_CityCannotHaveSpecialChars() {
 		log.info("NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field");
-		newCustomerPage.clearDataCityTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "city");
 
 		log.info("NEW CUSTOMER - CITY - STEP 2: Input special chars into City Field");
-		newCustomerPage.inputToCityTextbox("@#");
-
+		newCustomerPage.inputToDynamicTextbox(driver, "city", "#$@#");
+		
 		log.info("NEW CUSTOMER - CITY - STEP 3: Verify Special chars are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCityCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"Special characters are not allowed");
 
 		log.info("NEW CUSTOMER - CITY - STEP 4: Clear data in City Field");
-		newCustomerPage.clearDataCustomerNameTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "city");
 
 		log.info("NEW CUSTOMER - CITY - STEP 5: Input special chars into City Field");
-		newCustomerPage.inputToCityTextbox("abc#@");
+		newCustomerPage.inputToDynamicTextbox(driver, "city", "city&*#");
 
 		log.info("NEW CUSTOMER - CITY - STEP 6: Verify Special chars are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateCityCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"Special characters are not allowed");
 	}
 
 	@Test
 	public void TC_11_CityCannotHaveFirstBlankSpace() {
 		log.info("NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field");
-		newCustomerPage.clearDataCityTextbox();
-
+		newCustomerPage.clearDynamicTextbox(driver, "city");
+		
 		log.info("NEW CUSTOMER - CITY - STEP 2: Input data hava first Blank Space");
-		newCustomerPage.inputToCityTextbox(" ");
+		newCustomerPage.inputToDynamicTextbox(driver, "city", " ");
 
 		log.info("NEW CUSTOMER - CITY - STEP 3: Verify First character cannot be space");
-		verifyTrue(newCustomerPage.ValidateCityCannotHaveFirstCharAsBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "City"),"First character can not have space");
 	}
 
 	@Test
 	public void TC_12_StateCannotBeEmpty() {
 		log.info("NEW CUSTOMER - STATE - STEP 1: Dont input data into State Field");
-		newCustomerPage.sendKeyTabToState();
+		newCustomerPage.pressTABToDynamicTextbox(driver, "state");
 
 		log.info("NEW CUSTOMER - STATE - STEP 2: Verify State must not be blank");
-		verifyTrue(newCustomerPage.ValidateStateCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"State must not be blank");
 	}
 
 	@Test
 	public void TC_13_StateCannotBeNumeric() {
 		log.info("NEW CUSTOMER - STATE - STEP 1: Input number into State Field");
-		newCustomerPage.inputToStateTextbox("1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "state", "123");
 
 		log.info("NEW CUSTOMER - STATE - STEP 2: Verify Numbers are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateStateCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"Numbers are not allowed");
 
 		log.info("NEW CUSTOMER - STATE - STEP 3: Clear data in State Field");
-		newCustomerPage.clearDataStateTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "state");
 
 		log.info("NEW CUSTOMER - STATE - STEP 4: Input number into State Field");
-		newCustomerPage.inputToStateTextbox("state1234");
+		newCustomerPage.inputToDynamicTextbox(driver, "state", "state123");
 
 		log.info("NEW CUSTOMER - STATE - STEP 5: Verify Numbers are not allowed is displayed");
-		verifyTrue(newCustomerPage.ValidateStateCannotBeNumeric());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"Numbers are not allowed");
 	}
 
 	@Test
@@ -222,159 +225,160 @@ public class Validation_01_NewCustomer extends AbstractTest {
 		newCustomerPage.clearDataStateTextbox();
 
 		log.info("NEW CUSTOMER - STATE - STEP 2: Input Special Chras into State Field");
-		newCustomerPage.inputToStateTextbox("@#");
+		newCustomerPage.inputToDynamicTextbox(driver, "state", "#@!#");
 
 		log.info("NEW CUSTOMER - STATE - STEP 3: Verify State cannot have special chars is displayed");
-		verifyTrue(newCustomerPage.ValidateStateCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"Special characters are not allowed");
 
 		log.info("NEW CUSTOMER - STATE - STEP 4: Clear data in State Field");
-		newCustomerPage.clearDataStateTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "state");
 
 		log.info("NEW CUSTOMER - STATE - STEP 5: Input Special Chras into State Field");
-		newCustomerPage.inputToStateTextbox("abc#@");
+		newCustomerPage.inputToDynamicTextbox(driver, "state", "sate@#!");
 
 		log.info("NEW CUSTOMER - STATE - STEP 6:  Verify State cannot have special chars is displayed");
-		verifyTrue(newCustomerPage.ValidateStateCannotHaveSpecicalChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"Special characters are not allowed");
 	}
 
 	@Test
 	public void TC_15_StateCannotHaveFirstBlankSpace() {
 		log.info("NEW CUSTOMER - STATE - STEP 1: Clear data in State Field");
-		newCustomerPage.clearDataStateTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "state");
 
 		log.info("NEW CUSTOMER - STATE - STEP 2: Input First blank space into State Field");
-		newCustomerPage.inputToStateTextbox(" ");
+		newCustomerPage.inputToDynamicTextbox(driver, "state", " ");
 
 		log.info("NEW CUSTOMER - STATE - STEP 3: Verify State cannot have first blank space");
-		verifyTrue(newCustomerPage.ValidateStateCannotHaveFirstCharAsBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "State"),"First character can not have space");
 	}
 
 	@Test
 	public void TC_16_PinMustBeNumeric() {
 		log.info("NEW CUSTOMER - PIN - STEP 1: Input not number into Pin Field");
-		newCustomerPage.inputToPinTextbox("abc");
+		newCustomerPage.inputToDynamicTextbox(driver, "pinno", "abc");
 
 		log.info("NEW CUSTOMER - PIN - STEP 2: Verify Pin must be numberic is displayed");
-		verifyTrue(newCustomerPage.ValidatePinMustBeNumberic());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "PIN"),"Characters are not allowed");
 
 	}
 
 	@Test
 	public void TC_17_PinCannotBeEmpty() {
 		log.info("NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field");
-		newCustomerPage.clearDataPinTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "pinno");
 
-		log.info("NEW CUSTOMER - PIN - STEP 2: Dont input data into Pin Field");
-		newCustomerPage.sendKeyTabToPin();
-
+		log.info("NEW CUSTOMER - PIN - STEP 2: TAB out Pin Field");
+		newCustomerPage.pressTABToDynamicTextbox(driver, "pinno");
+		
 		log.info("NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot be Empty is displayed");
-		verifyTrue(newCustomerPage.ValidatePinCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "PIN"),"PIN Code must not be blank");
 	}
 
 	@Test
 	public void TC_18_PinMustHave6Digits() {
 		log.info("NEW CUSTOMER - PIN - STEP 1: Input less than 6 digits into Pin Field");
-		newCustomerPage.inputToPinTextbox("123");
+		newCustomerPage.inputToDynamicTextbox(driver, "pinno", "123");
 
 		log.info("NEW CUSTOMER - PIN - STEP 2: Verify Pin must have 6 digits is displayed");
-		verifyTrue(newCustomerPage.ValidatePinMustHave6Digits());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "PIN"),"PIN Code must have 6 Digits");
 	}
 
 	@Test
 	public void TC_19_PinCannotHaveSpecialChars() {
 		log.info("NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field");
-		newCustomerPage.clearDataPinTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "pinno");
 
 		log.info("NEW CUSTOMER - PIN - STEP 2: Input special chars into Pin Field");
-		newCustomerPage.inputToPinTextbox("12#3");
+		newCustomerPage.inputToDynamicTextbox(driver, "pinno", "@#!");
 
 		log.info("NEW CUSTOMER - PIN - STEP 3: Verify Pin cannt have special chars");
-		verifyTrue(newCustomerPage.ValidatePinCannotHaveSpecialChars());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "PIN"),"Special characters are not allowed");
 	}
 
 	@Test
 	public void TC_20_PinCannotHaveFirstBlankSpace() {
 		log.info("NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field");
-		newCustomerPage.clearDataPinTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "pinno");
 
 		log.info("NEW CUSTOMER - PIN - STEP 2: Input first blank space into Pin Field");
-		newCustomerPage.inputToPinTextbox(" 123");
+		newCustomerPage.inputToDynamicTextbox(driver, "pinno", " ");
 
 		log.info("NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot have first blank space");
-		verifyTrue(newCustomerPage.ValidatePinCannotHaveFirstBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "PIN"),"First character can not have space");
 	}
 
 	@Test
 	public void TC_22_TelephoneCannotBeEmpty() {
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 1: Dont input data into Telephone");
-		newCustomerPage.sendKeyTabToTelephone();
+		newCustomerPage.pressTABToDynamicTextbox(driver, "telephoneno");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot be empty");
-		verifyTrue(newCustomerPage.ValidateTelephoneCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Mobile Number"),"Mobile no must not be blank");
 	}
 
 	@Test
 	public void TC_23_TelephoneCannotHaveFirstCharsAsBlankSpace() {
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 1: Input first blank space into Telephone Field");
-		newCustomerPage.inputToMobilePhoneTextbox(" 123");
+		newCustomerPage.inputToDynamicTextbox(driver, "telephoneno", " ");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot have first blank space");
-		verifyTrue(newCustomerPage.ValidateTelephoneCannotHaveFirstBlankSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Mobile Number"),"First character can not have space");
 	}
 
 	@Test
 	public void TC_24_TelephoneCannotHaveSpaces() {
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in Telephone Field");
-		newCustomerPage.clearDataTelephoneTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "telephoneno");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 2: Input data have spaces into Telephone Field");
-		newCustomerPage.inputToMobilePhoneTextbox("123 123");
+		newCustomerPage.inputToDynamicTextbox(driver, "telephoneno", "123 123");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 3: Verify Telephone cannot have spaces");
-		verifyTrue(newCustomerPage.ValidateTelephoneCannotHaveSpace());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Mobile Number"),"Characters are not allowed");
 	}
 
 	@Test
 	public void TC_25_TelephoneCannotHaveSpecialCharacter() {
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in State Field");
-		newCustomerPage.clearDataTelephoneTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "telephoneno");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 2: Clear data in State Field");
-		newCustomerPage.inputToMobilePhoneTextbox("123&&123");
+		newCustomerPage.inputToDynamicTextbox(driver, "telephoneno", "123&123");
 
 		log.info("NEW CUSTOMER - TELEPHONE - STEP 3: Clear data in State Field");
-		verifyTrue(newCustomerPage.ValidateTelephoneCannotHaveSpecialCharacter());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "Mobile Number"),"Special characters are not allowed");
 
 	}
 
 	@Test
 	public void TC_26_EmailCannotBeEmpty() {
 		log.info("NEW CUSTOMER - EMAIL - STEP 1: Dont input data into Email Field");
-		newCustomerPage.sendKeyTabToEmail();
-
+		newCustomerPage.pressTABToDynamicTextbox(driver, "emailid");
+		
 		log.info("NEW CUSTOMER - EMAIL - STEP 2: Verify email cannot be empty is displayed");
-		verifyTrue(newCustomerPage.ValidateEmailCannotBeEmpty());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "E-mail"),"Email-ID must not be blank");
 	}
 
 	@Test
 	public void TC_27_EmailMustBeInCorrectFormat() {
 		log.info("NEW CUSTOMER - EMAIL - STEP 1: Clear data in Email Field");
-		newCustomerPage.clearDataEmailTextbox();
+		newCustomerPage.clearDynamicTextbox(driver, "emailid");
+
 
 		log.info("NEW CUSTOMER - EMAIL - STEP 2: Input invalid email into Email Field");
-		newCustomerPage.inputToEmailCustomerTextbox("guru@gmal");
-
+		newCustomerPage.inputToDynamicTextbox(driver, "emailid", "guru@gmal");
+		
 		log.info("NEW CUSTOMER - EMAIL - STEP 3: Verify Email must be in correct format is displayed");
-		verifyTrue(newCustomerPage.ValidateEmailMustBeInCorrectFormat());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "E-mail"),"Email-ID is not valid");
 	}
 
 	@Test
 	public void TC_29_EmailCannotHaveSpace() {
 		log.info("NEW CUSTOMER - EMAIL - STEP 1: Input data have space into Mail");
-		newCustomerPage.inputToEmailCustomerTextbox("gu ru@ gmal  ");
-
+		newCustomerPage.inputToDynamicTextbox(driver, "emailid", "gu ru@ gmal  ");
+		
 		log.info("NEW CUSTOMER - EMAIL - STEP 2: Verify Email cannot have space is displayed");
-		verifyTrue(newCustomerPage.ValidateEmailMustBeInCorrectFormat());
+		verifyEquals(newCustomerPage.getDynamicTextInTable(driver, "E-mail"),"Email-ID is not valid");
 	}
 
 	@AfterClass
