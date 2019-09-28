@@ -43,7 +43,7 @@ public class Account_14_Dependencies_Testcase {
 	}
 	
 	@Test
-	public void TC_02_NameCannotBeNumeric() throws Exception {
+	public void TC_02_InputInvalidDataAllTheFields() throws Exception {
 		driver.findElement(By.xpath("//input[@id='txtEmail']")).sendKeys("321321");
 		driver.findElement(By.xpath("//input[@id='txtCEmail']")).sendKeys("32dsa1321");
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).sendKeys("321");
