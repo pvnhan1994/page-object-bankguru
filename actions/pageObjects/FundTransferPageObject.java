@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 
-public class DepositPageObject extends AbstractPage{
+public class FundTransferPageObject extends AbstractPage{
 	WebDriver driver;
 
-	public DepositPageObject(WebDriver mappingDriver) {
+	public FundTransferPageObject(WebDriver mappingDriver) {
 		driver = mappingDriver;
 	}
 }

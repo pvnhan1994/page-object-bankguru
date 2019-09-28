@@ -49,9 +49,18 @@ public class AbstractPage {
 	public void fowardToPage(WebDriver driver) {
 		driver.navigate().forward();
 	}
-
+	public void waitForAlertPresent(WebDriver driver) {
+		waitExplicit = new WebDriverWait(driver, longTimeOut);
+		waitExplicit.until(ExpectedConditions.alertIsPresent());
+	}
 	public void acceptAlert(WebDriver driver) {
 		driver.switchTo().alert().accept();
+		sleepInSecond(driver,2);
+	}
+
+	private void sleepInSecond(WebDriver driver, int i) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void cancelAlert(WebDriver driver) {
@@ -80,11 +89,13 @@ public class AbstractPage {
 
 	public void sendkeyElement(WebDriver driver, String locator, String value) {
 		element = driver.findElement(By.xpath(locator));
+		element.clear();
 		element.sendKeys(value);
 	}
 	public void sendkeyElement(WebDriver driver, String locator, String value, String...values) {
 		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
+		element.clear();
 		element.sendKeys(value);
 	}
 	public void clearDataElement(WebDriver driver, String locator) {
@@ -97,6 +108,12 @@ public class AbstractPage {
 		element.clear();
 	}
 	public void selectItemInDropDown(WebDriver driver, String locator, String itemText) {
+		element = driver.findElement(By.xpath(locator));
+		select = new Select(element);
+		select.selectByVisibleText(itemText);
+	}
+	public void selectItemInDropDown(WebDriver driver, String locator, String itemText, String...values) {
+		locator = String.format(locator, (Object[]) values);
 		element = driver.findElement(By.xpath(locator));
 		select = new Select(element);
 		select.selectByVisibleText(itemText);
@@ -412,15 +429,27 @@ public class AbstractPage {
 		clickToElement(driver, AbstractPageUI.DYNAMIC_MENU_LINK, pagename);
 
 		switch (pagename) {
-
+		
 		case "New Account":
 			return PageGeneratorManager.getNewAccountPage(driver);
 		case "Edit Account":
 			return PageGeneratorManager.getEditAccountPage(driver);
 		case "New Customer":
 			return PageGeneratorManager.getNewCustomerPage(driver);
+		case "Delete Customer":
+			return PageGeneratorManager.getDeleteCustomerPage(driver);
+		case "Deposit":
+			return PageGeneratorManager.getDepositPage(driver);
 		case "Edit Customer":
 			return PageGeneratorManager.getEditCustomerPage(driver);
+		case "Withdrawal":
+			return PageGeneratorManager.getWithdralwalPage(driver);
+		case "Fund Transfer":
+			return PageGeneratorManager.getFundTransfer(driver);
+		case "Balance Enquiry":
+			return PageGeneratorManager.getBalanceEnquiry(driver);
+		case "Delete Account":
+			return PageGeneratorManager.getDeleteAccount(driver);
 		default:
 			return PageGeneratorManager.getHomePage(driver);
 
@@ -446,9 +475,19 @@ public class AbstractPage {
 
 	public void clickToDynamicRadioButton(WebDriver driver, String radioButtonNameValue) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_RADIO_BUTTON,radioButtonNameValue);
-		sendkeyElement(driver, AbstractPageUI.DYNAMIC_TEXT_AREA, radioButtonNameValue);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_RADIO_BUTTON, radioButtonNameValue);
 	}
 
+	public void clickToDynamicButton(WebDriver driver, String ButtonNameValue) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_BUTTON,ButtonNameValue);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_BUTTON, ButtonNameValue);
+	}
+	
+	public void selectToDynamicDropdownList(WebDriver driver,String dropDownID,  String valueInDropdown) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropDownID);
+		selectItemInDropDown(driver, AbstractPageUI.DYNAMIC_DROPDOWN_LIST, valueInDropdown, dropDownID);
+	}
+	
 	public boolean isDynamicPageOrMessageDisplayed(WebDriver driver, String pageHeadingName) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_PAGE_HEADING, pageHeadingName);
 		return isControlDisplayed(driver, AbstractPageUI.DYNAMIC_PAGE_HEADING,pageHeadingName);
@@ -474,6 +513,14 @@ public class AbstractPage {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
 		clearDataElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
 	}
+	public boolean isDynamicAlertMessageDisplayedAndAcceptAlert(WebDriver driver, String expectedAlertMessage) {
+		waitForAlertPresent(driver);
+		String actualAlertMessage = getTextAlert(driver);
+		acceptAlert(driver);
+		return actualAlertMessage.equals(expectedAlertMessage);
+		
+	}
+	
 	private WebElement element;
 	private List<WebElement> elements;
 	private Select select;

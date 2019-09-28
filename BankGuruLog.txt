@@ -1,227 +1,322 @@
-2019-09-23 22:56:22,364 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
-2019-09-23 22:56:22,474 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
-2019-09-23 22:56:22,475 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
-2019-09-23 22:56:25,138 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
-2019-09-23 22:56:25,364 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
-2019-09-23 22:56:26,718 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
-2019-09-23 22:56:27,442 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - OS name = mac os x
-2019-09-23 22:56:27,613 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ---------- QUIT BROWSER SUCCESS ----------
-2019-09-23 22:56:33,065 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 1: Input username
-2019-09-23 22:56:33,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 2: Input password
-2019-09-23 22:56:33,414 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 3: Click Button
-2019-09-23 22:56:34,190 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 4: Verify Welcome Msg displayed
-2019-09-23 22:56:35,988 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
-2019-09-23 22:56:35,989 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 5: Verify USERID displayed
-2019-09-23 22:56:36,009 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
-2019-09-23 22:56:36,009 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 6: Open New Customer
-2019-09-23 22:56:37,715 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Press Tab and move to next Field
-2019-09-23 22:56:38,149 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Customer name must not be blank is displayed
-2019-09-23 22:56:38,227 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Customer name must not be blank
-2019-09-23 22:56:38,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Customer name must not be blank
-2019-09-23 22:56:38,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:38,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:38,230 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Input numberic value in Name Field
-2019-09-23 22:56:38,315 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Numbers are not allowed is displayed
-2019-09-23 22:56:38,507 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:38,508 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:38,508 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:38,508 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:38,508 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Clear data in Name Field
-2019-09-23 22:56:38,663 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Input numberic value in Name Field
-2019-09-23 22:56:38,861 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 5: Verify Numbers are not allowed is displayed
-2019-09-23 22:56:38,917 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:38,917 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:38,918 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:38,918 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:38,920 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME -  STEP 1: Clear data in Name Field
-2019-09-23 22:56:39,007 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME -  STEP 2: Input special chars into Name Field
-2019-09-23 22:56:39,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Verify Special chars are not allowed is displayed
-2019-09-23 22:56:39,183 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:39,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:39,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:39,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:39,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Clear data in Name Field
-2019-09-23 22:56:39,230 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 5: Input special chars into Name Field
-2019-09-23 22:56:39,615 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 6: Verify Special chars are not allowed is displayed
-2019-09-23 22:56:39,657 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:39,657 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:39,657 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:39,657 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:39,658 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Clear data in Name Field
-2019-09-23 22:56:39,705 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Dont input into Name Field
-2019-09-23 22:56:39,789 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Verify First chars cannot be space is displayed
-2019-09-23 22:56:39,887 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:39,888 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:39,888 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:39,888 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:39,890 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Dont input data into Address
-2019-09-23 22:56:40,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify Address cannot be empty is displayed
-2019-09-23 22:56:40,135 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Address Field must not be blank
-2019-09-23 22:56:40,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Address Field must not be blank
-2019-09-23 22:56:40,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:40,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:40,137 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Input Fisrt chars as blank space
-2019-09-23 22:56:40,202 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify First chars cannot be space is displayed
-2019-09-23 22:56:40,282 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:40,283 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:40,283 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:40,283 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:40,284 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Dont input data into City Field
-2019-09-23 22:56:40,423 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify City Field must be not blank
-2019-09-23 22:56:40,488 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = City Field must not be blank
-2019-09-23 22:56:40,488 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = City Field must not be blank
-2019-09-23 22:56:40,488 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:40,488 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:40,489 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Input numberic into City Field
-2019-09-23 22:56:40,556 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify Numbers are not allowed
-2019-09-23 22:56:40,635 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:40,635 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:40,636 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:40,636 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:40,636 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Clear data in Name Field
-2019-09-23 22:56:40,674 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Input numberic into City Field
-2019-09-23 22:56:40,763 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 5: Verify Numbers are not allowed
-2019-09-23 22:56:40,810 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:40,811 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:40,811 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:40,811 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:40,814 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field
-2019-09-23 22:56:40,863 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Input special chars into City Field
-2019-09-23 22:56:40,960 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Verify Special chars are not allowed is displayed
-2019-09-23 22:56:41,020 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:41,020 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:41,020 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,020 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,021 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Clear data in City Field
-2019-09-23 22:56:41,062 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 5: Input special chars into City Field
-2019-09-23 22:56:41,167 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 6: Verify Special chars are not allowed is displayed
-2019-09-23 22:56:41,211 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:41,212 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:41,212 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,212 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,213 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Clear data in Ctiy Field
-2019-09-23 22:56:41,261 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Input data hava first Blank Space
-2019-09-23 22:56:41,331 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Verify First character cannot be space
-2019-09-23 22:56:41,381 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:41,381 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:41,381 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,381 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,383 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Dont input data into State Field
-2019-09-23 22:56:41,524 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify State must not be blank
-2019-09-23 22:56:41,580 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = State must not be blank
-2019-09-23 22:56:41,580 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = State must not be blank
-2019-09-23 22:56:41,580 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,580 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,582 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Input number into State Field
-2019-09-23 22:56:41,647 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify Numbers are not allowed is displayed
-2019-09-23 22:56:41,731 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:41,731 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:41,731 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,731 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,731 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Clear data in State Field
-2019-09-23 22:56:41,768 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Input number into State Field
-2019-09-23 22:56:41,870 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 5: Verify Numbers are not allowed is displayed
-2019-09-23 22:56:41,913 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
-2019-09-23 22:56:41,913 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
-2019-09-23 22:56:41,914 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:41,914 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:41,915 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Clear data in State Field
-2019-09-23 22:56:41,960 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Input Special Chras into State Field
-2019-09-23 22:56:42,032 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Verify State cannot have special chars is displayed
-2019-09-23 22:56:42,086 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:42,086 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:42,086 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,086 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,086 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Clear data in State Field
-2019-09-23 22:56:42,123 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 5: Input Special Chras into State Field
-2019-09-23 22:56:42,220 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 6:  Verify State cannot have special chars is displayed
-2019-09-23 22:56:42,273 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:42,273 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:42,273 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,273 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,275 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Clear data in State Field
-2019-09-23 22:56:42,329 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Input First blank space into State Field
-2019-09-23 22:56:42,397 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Verify State cannot have first blank space
-2019-09-23 22:56:42,464 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:42,465 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:42,465 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,465 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,467 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input not number into Pin Field
-2019-09-23 22:56:42,541 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must be numberic is displayed
-2019-09-23 22:56:42,600 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Characters are not allowed
-2019-09-23 22:56:42,601 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Characters are not allowed
-2019-09-23 22:56:42,601 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,601 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,602 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
-2019-09-23 22:56:42,780 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot be Empty is displayed
-2019-09-23 22:56:42,817 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = PIN Code must not be blank
-2019-09-23 22:56:42,817 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = PIN Code must not be blank
-2019-09-23 22:56:42,817 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,817 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,818 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input less than 6 digits into Pin Field
-2019-09-23 22:56:42,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must have 6 digits is displayed
-2019-09-23 22:56:42,930 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = PIN Code must have 6 Digits
-2019-09-23 22:56:42,930 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = PIN Code must have 6 Digits
-2019-09-23 22:56:42,930 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:42,931 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:42,932 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
-2019-09-23 22:56:42,982 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Input special chars into Pin Field
-2019-09-23 22:56:43,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannt have special chars
-2019-09-23 22:56:43,130 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:43,130 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:43,131 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:43,131 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:43,135 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Clear data in Pin Field
-2019-09-23 22:56:43,181 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Input first blank space into Pin Field
-2019-09-23 22:56:43,245 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 3: Verify Pin cannot have first blank space
-2019-09-23 22:56:43,316 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:43,317 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:43,317 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:43,317 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:43,318 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Dont input data into Telephone
-2019-09-23 22:56:43,459 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot be empty
-2019-09-23 22:56:43,520 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Mobile no must not be blank
-2019-09-23 22:56:43,520 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Mobile no must not be blank
-2019-09-23 22:56:43,520 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:43,520 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:43,521 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Input first blank space into Telephone Field
-2019-09-23 22:56:43,579 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot have first blank space
-2019-09-23 22:56:43,647 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
-2019-09-23 22:56:43,647 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
-2019-09-23 22:56:43,647 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:43,647 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:43,649 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in Telephone Field
-2019-09-23 22:56:43,706 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Input data have spaces into Telephone Field
-2019-09-23 22:56:43,805 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 3: Verify Telephone cannot have spaces
-2019-09-23 22:56:43,854 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Characters are not allowed
-2019-09-23 22:56:43,854 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Characters are not allowed
-2019-09-23 22:56:43,854 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:43,854 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:43,855 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Clear data in State Field
-2019-09-23 22:56:43,920 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Clear data in State Field
-2019-09-23 22:56:44,012 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 3: Clear data in State Field
-2019-09-23 22:56:44,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
-2019-09-23 22:56:44,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
-2019-09-23 22:56:44,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:44,073 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:44,075 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Dont input data into Email Field
-2019-09-23 22:56:44,223 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify email cannot be empty is displayed
-2019-09-23 22:56:44,313 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Email-ID must not be blank
-2019-09-23 22:56:44,314 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Email-ID must not be blank
-2019-09-23 22:56:44,314 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:44,314 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:44,315 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Clear data in Email Field
-2019-09-23 22:56:44,373 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Input invalid email into Email Field
-2019-09-23 22:56:44,463 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 3: Verify Email must be in correct format is displayed
-2019-09-23 22:56:44,527 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Email-ID is not valid
-2019-09-23 22:56:44,527 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Email-ID is not valid
-2019-09-23 22:56:44,527 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:44,527 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:44,532 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Input data have space into Mail
-2019-09-23 22:56:44,625 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify Email cannot have space is displayed
-2019-09-23 22:56:44,683 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Email-ID is not valid
-2019-09-23 22:56:44,683 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Email-ID is not valid
-2019-09-23 22:56:44,683 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
-2019-09-23 22:56:44,683 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
-2019-09-23 22:56:44,686 INFO  com.bankguru.validation.Validation_01_NewCustomer - OS name = mac os x
-2019-09-23 22:56:44,917 INFO  com.bankguru.validation.Validation_01_NewCustomer - ---------- QUIT BROWSER SUCCESS ----------
+2019-09-29 00:21:22,831 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
+2019-09-29 00:21:22,938 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
+2019-09-29 00:21:22,940 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
+2019-09-29 00:21:25,811 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
+2019-09-29 00:21:25,990 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
+2019-09-29 00:21:27,512 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
+2019-09-29 00:21:28,296 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - OS name = mac os x
+2019-09-29 00:21:28,492 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ---------- QUIT BROWSER SUCCESS ----------
+2019-09-29 00:21:34,963 INFO  com.bankguru.account.Account_13_Payment_Follow - LOGIN - STEP 1: Input username
+2019-09-29 00:21:35,120 INFO  com.bankguru.account.Account_13_Payment_Follow - LOGIN - STEP 2: Input password
+2019-09-29 00:21:35,307 INFO  com.bankguru.account.Account_13_Payment_Follow - LOGIN - STEP 3: Click Button
+2019-09-29 00:21:35,803 INFO  com.bankguru.account.Account_13_Payment_Follow - LOGIN - STEP 4: Verify Welcome Msg displayed
+2019-09-29 00:21:37,651 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:37,652 INFO  com.bankguru.account.Account_13_Payment_Follow - LOGIN - STEP 5: Verify USERID displayed
+2019-09-29 00:21:37,677 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:37,682 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 1: Open New Customer Page
+2019-09-29 00:21:39,242 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:39,242 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 2: Fill in All the fields
+2019-09-29 00:21:41,114 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 3: Click Submit button
+2019-09-29 00:21:43,400 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 4: Verify message displays with content Customer Registered Successfully
+2019-09-29 00:21:43,453 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:43,453 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 5: Verify all information is displayed
+2019-09-29 00:21:43,498 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Cooinnie
+2019-09-29 00:21:43,498 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Cooinnie
+2019-09-29 00:21:43,498 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,498 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,540 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 1993-02-01
+2019-09-29 00:21:43,540 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 1993-02-01
+2019-09-29 00:21:43,540 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,541 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,584 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 391 Thakketay Hill
+2019-09-29 00:21:43,584 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 391 Thakketay Hill
+2019-09-29 00:21:43,584 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,584 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,625 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Hunutsvylke
+2019-09-29 00:21:43,625 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Hunutsvylke
+2019-09-29 00:21:43,625 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,625 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,667 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Akabbaha
+2019-09-29 00:21:43,667 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Akabbaha
+2019-09-29 00:21:43,667 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,668 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,704 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 313412
+2019-09-29 00:21:43,704 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 313412
+2019-09-29 00:21:43,704 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,704 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,752 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 2133674369
+2019-09-29 00:21:43,752 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 2133674369
+2019-09-29 00:21:43,752 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,752 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,786 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = cmcbcblzy9o@indiatimes.com
+2019-09-29 00:21:43,786 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = cmcbcblzy9o@indiatimes.com
+2019-09-29 00:21:43,786 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:43,786 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:43,787 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW CUSTOMER - STEP 6: Get Customer ID
+2019-09-29 00:21:43,844 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 1: Open Edit Customer Page
+2019-09-29 00:21:45,146 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:45,146 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 2: Fill CustomerID
+2019-09-29 00:21:45,242 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 3: Click Submit button
+2019-09-29 00:21:46,966 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 4: Clear all fileds
+2019-09-29 00:21:47,733 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 5: Fill in Address, City, State, PIN, Mobile Number, Email fields
+2019-09-29 00:21:48,313 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 6: Click Submit button
+2019-09-29 00:21:50,584 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 7: Verify message displays with content Edit Customer Successfully
+2019-09-29 00:21:50,649 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:50,649 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT CUSTOMER - STEP 8: Verify all information updated is displayed
+2019-09-29 00:21:50,695 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 6 Btrrows Place
+2019-09-29 00:21:50,695 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 6 Btrrows Place
+2019-09-29 00:21:50,695 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,695 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,749 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Sakt Piul
+2019-09-29 00:21:50,749 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Sakt Piul
+2019-09-29 00:21:50,749 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,750 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,801 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Micneaota
+2019-09-29 00:21:50,802 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Micneaota
+2019-09-29 00:21:50,802 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,802 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,845 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 125192
+2019-09-29 00:21:50,845 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 125192
+2019-09-29 00:21:50,845 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,845 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,887 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 6112216635
+2019-09-29 00:21:50,887 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 6112216635
+2019-09-29 00:21:50,887 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,887 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,924 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = laes0elby3k@phoca.cz
+2019-09-29 00:21:50,924 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = laes0elby3k@phoca.cz
+2019-09-29 00:21:50,924 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:50,924 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:50,926 INFO  com.bankguru.account.Account_13_Payment_Follow - =============== CREATE FIRST ACCOUNT ==============
+2019-09-29 00:21:50,926 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 1: Open New Account page
+2019-09-29 00:21:52,887 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:52,887 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 2: Fill in CustomerID
+2019-09-29 00:21:52,982 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 3: Select type Savings
+2019-09-29 00:21:53,083 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 4: Fill in Deposit
+2019-09-29 00:21:53,190 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 5: Click Submit button
+2019-09-29 00:21:55,232 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 6: Verify Account Generated Successfully is displayed
+2019-09-29 00:21:55,275 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:55,275 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 7: Verify all information First New Account is displayed
+2019-09-29 00:21:55,320 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 96713
+2019-09-29 00:21:55,320 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 96713
+2019-09-29 00:21:55,320 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,320 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,351 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Cooinnie
+2019-09-29 00:21:55,351 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Cooinnie
+2019-09-29 00:21:55,351 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,351 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,394 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = laes0elby3k@phoca.cz
+2019-09-29 00:21:55,394 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = laes0elby3k@phoca.cz
+2019-09-29 00:21:55,394 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,394 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,429 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Savings
+2019-09-29 00:21:55,429 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Savings
+2019-09-29 00:21:55,429 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,429 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,508 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 2019-09-28
+2019-09-29 00:21:55,508 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 2019-09-28
+2019-09-29 00:21:55,508 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,508 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,546 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 50000
+2019-09-29 00:21:55,546 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 50000
+2019-09-29 00:21:55,546 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:21:55,546 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:21:55,580 INFO  com.bankguru.account.Account_13_Payment_Follow - =============== CREATE SECOND ACCOUNT ==============
+2019-09-29 00:21:55,581 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 1: Open New Account page
+2019-09-29 00:21:56,778 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:21:56,778 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 2: Fill in CustomerID
+2019-09-29 00:21:56,985 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 3: Select type Savings
+2019-09-29 00:21:57,191 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 4: Fill in Deposit
+2019-09-29 00:21:57,337 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 5: Click Submit button
+2019-09-29 00:22:01,125 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 6: Verify Account Generated Successfully is displayed
+2019-09-29 00:22:01,180 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:01,180 INFO  com.bankguru.account.Account_13_Payment_Follow - NEW ACCOUNT - STEP 7: Verify all information Second New Account is displayed
+2019-09-29 00:22:01,220 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 96713
+2019-09-29 00:22:01,220 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 96713
+2019-09-29 00:22:01,220 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,220 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,261 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Cooinnie
+2019-09-29 00:22:01,261 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Cooinnie
+2019-09-29 00:22:01,261 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,261 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,300 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = laes0elby3k@phoca.cz
+2019-09-29 00:22:01,301 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = laes0elby3k@phoca.cz
+2019-09-29 00:22:01,301 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,301 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,346 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Current
+2019-09-29 00:22:01,346 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Current
+2019-09-29 00:22:01,346 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,346 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,384 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 2019-09-28
+2019-09-29 00:22:01,384 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 2019-09-28
+2019-09-29 00:22:01,384 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,384 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,434 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 10000
+2019-09-29 00:22:01,434 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 10000
+2019-09-29 00:22:01,434 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:01,434 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:01,480 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 1: Open Edit Account page
+2019-09-29 00:22:04,122 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 2: Fill in AccountNo
+2019-09-29 00:22:04,215 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 3: Click Submit button
+2019-09-29 00:22:05,968 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 4: Change became Current value
+2019-09-29 00:22:06,432 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 5: Click Submit button
+2019-09-29 00:22:09,203 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 6: Verify Account details updated Successfully is displayed
+2019-09-29 00:22:09,246 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:09,247 INFO  com.bankguru.account.Account_13_Payment_Follow - EDIT ACCOUNT - STEP 7: Verify all information First Edit Account is displayed
+2019-09-29 00:22:09,297 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69733
+2019-09-29 00:22:09,297 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69733
+2019-09-29 00:22:09,297 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,297 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,401 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 96713
+2019-09-29 00:22:09,401 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 96713
+2019-09-29 00:22:09,401 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,401 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,453 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Cooinnie
+2019-09-29 00:22:09,453 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Cooinnie
+2019-09-29 00:22:09,453 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,453 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,527 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = laes0elby3k@phoca.cz
+2019-09-29 00:22:09,527 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = laes0elby3k@phoca.cz
+2019-09-29 00:22:09,527 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,527 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,562 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Current
+2019-09-29 00:22:09,562 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Current
+2019-09-29 00:22:09,562 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,562 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,606 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 2019-09-28
+2019-09-29 00:22:09,606 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 2019-09-28
+2019-09-29 00:22:09,606 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,606 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,647 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 50000
+2019-09-29 00:22:09,647 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 50000
+2019-09-29 00:22:09,648 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:09,648 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:09,650 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 1: Open Deposit page
+2019-09-29 00:22:11,750 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:11,750 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 2: Fill in Account No
+2019-09-29 00:22:11,840 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 3: Fill in Amount
+2019-09-29 00:22:11,949 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 4: Fill in Description
+2019-09-29 00:22:12,089 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 5: Click Submit button
+2019-09-29 00:22:14,133 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 6: Verify Transaction details of Deposit for Account is displayed
+2019-09-29 00:22:14,471 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:14,471 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 7: Verify all information Transaction detail
+2019-09-29 00:22:14,499 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69733
+2019-09-29 00:22:14,499 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69733
+2019-09-29 00:22:14,499 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:14,499 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:14,535 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 5000
+2019-09-29 00:22:14,535 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 5000
+2019-09-29 00:22:14,535 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:14,535 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:14,585 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Deposit
+2019-09-29 00:22:14,585 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Deposit
+2019-09-29 00:22:14,585 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:14,585 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:14,623 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = nop tien
+2019-09-29 00:22:14,623 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = nop tien
+2019-09-29 00:22:14,623 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:14,623 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:14,660 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 55000
+2019-09-29 00:22:14,660 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 55000
+2019-09-29 00:22:14,660 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:14,660 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:14,661 INFO  com.bankguru.account.Account_13_Payment_Follow - WITHDRAWAL - STEP 1: Open Withdrawal page
+2019-09-29 00:22:16,507 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:16,508 INFO  com.bankguru.account.Account_13_Payment_Follow - WITHDRAWAL - STEP 2: Fill in Account No
+2019-09-29 00:22:16,587 INFO  com.bankguru.account.Account_13_Payment_Follow - WITHDRAWAL - STEP 3: Fill in Amount
+2019-09-29 00:22:16,679 INFO  com.bankguru.account.Account_13_Payment_Follow - WITHDRAWAL - STEP 4: Fill in Description
+2019-09-29 00:22:16,790 INFO  com.bankguru.account.Account_13_Payment_Follow - WITHDRAWAL - STEP 5: Click Submit button
+2019-09-29 00:22:18,495 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 6: Verify Transaction details of Withdrawal for Account is displayed
+2019-09-29 00:22:18,549 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:18,549 INFO  com.bankguru.account.Account_13_Payment_Follow - DEPOSIT - STEP 7: Verify all information Transaction detail
+2019-09-29 00:22:18,591 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69733
+2019-09-29 00:22:18,591 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69733
+2019-09-29 00:22:18,592 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:18,592 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:18,944 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 15000
+2019-09-29 00:22:18,944 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 15000
+2019-09-29 00:22:18,944 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:18,944 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:18,973 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Withdrawal
+2019-09-29 00:22:18,973 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Withdrawal
+2019-09-29 00:22:18,973 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:18,973 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:19,002 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = rut tien
+2019-09-29 00:22:19,002 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = rut tien
+2019-09-29 00:22:19,002 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:19,002 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:19,040 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 40000
+2019-09-29 00:22:19,040 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 40000
+2019-09-29 00:22:19,040 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:19,040 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:19,042 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 1: Open Fund Transfer page
+2019-09-29 00:22:20,563 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:20,564 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 2: Fill in Payers account no
+2019-09-29 00:22:20,646 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 3: Fill in Payees account no
+2019-09-29 00:22:21,034 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 4: Fill in Amount
+2019-09-29 00:22:21,112 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 5: Fill in Description
+2019-09-29 00:22:21,224 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 6: Click Submit button
+2019-09-29 00:22:22,812 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 7: Verify Fund Transfer Details is displayed
+2019-09-29 00:22:23,120 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:23,120 INFO  com.bankguru.account.Account_13_Payment_Follow - FUND_TRANSFER - STEP 8: Verify all information Fund Transfer Details
+2019-09-29 00:22:23,496 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69733
+2019-09-29 00:22:23,496 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69733
+2019-09-29 00:22:23,496 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:23,496 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:23,564 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69734
+2019-09-29 00:22:23,565 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69734
+2019-09-29 00:22:23,565 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:23,565 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:23,622 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 10000
+2019-09-29 00:22:23,622 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 10000
+2019-09-29 00:22:23,622 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:23,622 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:23,673 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = chuyen tien
+2019-09-29 00:22:23,673 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = chuyen tien
+2019-09-29 00:22:23,673 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:23,673 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:23,675 INFO  com.bankguru.account.Account_13_Payment_Follow - BALANCE_ENQUIRY - STEP 1: Open Fund Transfer page
+2019-09-29 00:22:26,135 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:26,135 INFO  com.bankguru.account.Account_13_Payment_Follow - BALANCE_ENQUIRY - STEP 2: Fill in Account No
+2019-09-29 00:22:26,210 INFO  com.bankguru.account.Account_13_Payment_Follow - BALANCE_ENQUIRY - STEP 3: Click Submit button
+2019-09-29 00:22:28,194 INFO  com.bankguru.account.Account_13_Payment_Follow - BALANCE_ENQUIRY - STEP 4: Verify Balance Details for Account is displayed
+2019-09-29 00:22:28,946 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:28,946 INFO  com.bankguru.account.Account_13_Payment_Follow - BALANCE_ENQUIRY - STEP 5: Verify all information Fund Transfer Details
+2019-09-29 00:22:28,983 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 69733
+2019-09-29 00:22:28,984 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 69733
+2019-09-29 00:22:28,984 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:28,984 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:29,049 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = Current
+2019-09-29 00:22:29,049 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = Current
+2019-09-29 00:22:29,049 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:29,049 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:29,087 INFO  com.bankguru.account.Account_13_Payment_Follow - Actual = 30000
+2019-09-29 00:22:29,087 INFO  com.bankguru.account.Account_13_Payment_Follow - Expected = 30000
+2019-09-29 00:22:29,087 INFO  com.bankguru.account.Account_13_Payment_Follow - Compare value = true
+2019-09-29 00:22:29,087 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED===
+2019-09-29 00:22:29,090 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 1: Open Delete Account page
+2019-09-29 00:22:31,029 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:31,029 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 2: Fill in Account No
+2019-09-29 00:22:31,127 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 3: Click Submit button
+2019-09-29 00:22:31,316 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 4: Verify Alert: Do you really want to delete this Account? is displayed
+2019-09-29 00:22:32,206 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:32,206 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 5: Verify Alert: Account Deleted Successfully is displayed
+2019-09-29 00:22:33,452 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:33,452 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 6: Open Delete Account page again
+2019-09-29 00:22:36,319 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:36,319 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 7: Fill in Account No
+2019-09-29 00:22:36,411 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 8: Click Submit button
+2019-09-29 00:22:36,857 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 9: Verify Alert: Do you really want to delete this Account? is displayed
+2019-09-29 00:22:37,465 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:37,467 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 10: Verify Alert: Account Deleted Successfully is displayed
+2019-09-29 00:22:38,557 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:38,558 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE CUSTOMER - STEP 1: Open Delete Customer page
+2019-09-29 00:22:41,686 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:41,687 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE CUSTOMER - STEP 2: Fill in CustomerID
+2019-09-29 00:22:41,757 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE CUSTOMER - STEP 3: Click Submit button
+2019-09-29 00:22:42,443 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 9: Verify Alert: Do you really want to delete this Customer? is displayed
+2019-09-29 00:22:42,887 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:42,888 INFO  com.bankguru.account.Account_13_Payment_Follow - DELETE ACCOUNT - STEP 10: Verify Alert: Customer Deleted Successfully is displayed
+2019-09-29 00:22:44,093 INFO  com.bankguru.account.Account_13_Payment_Follow - ===PASSED==
+2019-09-29 00:22:44,094 INFO  com.bankguru.account.Account_13_Payment_Follow - OS name = mac os x
+2019-09-29 00:22:44,373 INFO  com.bankguru.account.Account_13_Payment_Follow - ---------- QUIT BROWSER SUCCESS ----------

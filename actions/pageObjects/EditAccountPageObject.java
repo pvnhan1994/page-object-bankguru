@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import commons.AbstractPage;
 
 public class EditAccountPageObject extends AbstractPage {
-WebDriver driver;
+	WebDriver driver;
+
 	public EditAccountPageObject(WebDriver mappingDriver) {
 		driver = mappingDriver;
 	}

@@ -4,10 +4,13 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 
-public class DepositPageObject extends AbstractPage{
+public class DeleteCustomerPageObject extends AbstractPage {
+
 	WebDriver driver;
 
-	public DepositPageObject(WebDriver mappingDriver) {
+	public DeleteCustomerPageObject(WebDriver mappingDriver) {
 		driver = mappingDriver;
 	}
+
+	
 }
