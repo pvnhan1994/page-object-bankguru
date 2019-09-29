@@ -12,6 +12,8 @@ public class AbstractPageUI {
 	public static final String DYNAMIC_TEXT_AREA = "//textarea[@name='%s']";
 	public static final String DYNAMIC_PAGE_HEADING = "//p[@class='heading3' and text()='%s']";
 	public static final String DYNAMIC_TABLE_ROW_NAME = "//td[text()='%s']/following-sibling::td";
+
+	public static final String DYNAMIC_TABLE_ROW_NAME_VALIDATE = "//td[text()='%s']/following-sibling::td//label";
 	public static final String DYNAMIC_BUTTON = "//input[@value='%s']";
 	public static final String DYNAMIC_DROPDOWN_LIST = "//select[@name='%s']";
 }

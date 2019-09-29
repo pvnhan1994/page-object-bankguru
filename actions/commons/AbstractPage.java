@@ -497,6 +497,11 @@ public class AbstractPage {
 		return getTextElement(driver, AbstractPageUI.DYNAMIC_TABLE_ROW_NAME, rowName);
 		
 	}
+	public String getDynamicTextInTableValidate(WebDriver driver, String rowName) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TABLE_ROW_NAME_VALIDATE, rowName);
+		return getTextElement(driver, AbstractPageUI.DYNAMIC_TABLE_ROW_NAME_VALIDATE, rowName);
+		
+	}
 	public void pressTABToDynamicTextbox(WebDriver driver, String nameID) {
 		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, nameID);
 		sendKeyboardToElement(driver, AbstractPageUI.DYNAMIC_TEXTBOX_BUTTON, Keys.TAB, nameID);
