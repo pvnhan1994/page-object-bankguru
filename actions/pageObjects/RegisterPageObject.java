@@ -24,6 +24,7 @@ public class RegisterPageObject extends AbstractPage {
 	public String getUsernameInformation() {
 		waitForElementVisible(driver, RegisterPageUI.USERID_TEXT);
 		return getTextElement(driver, RegisterPageUI.USERID_TEXT);
+		
 	}
 
 	public String getPasswordInformation() {

@@ -24,6 +24,9 @@ public class AbstractTest {
 	protected AbstractTest() {
 		log = LogFactory.getLog(getClass());
 	}
+	public WebDriver getDriver() {
+		return driver;
+	}
 
 	protected WebDriver openMultiBrowser(String browserName) {
 
@@ -197,4 +200,6 @@ public class AbstractTest {
 	protected static String getToday() {
 		return getCurrentYear() + "-" + getCurrentMonth() + "-" + getCurrentDay();
 	}
+
+	
 }

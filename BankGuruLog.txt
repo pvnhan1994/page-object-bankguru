@@ -1,157 +1,205 @@
-2019-09-29 12:35:42,496 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
-2019-09-29 12:35:42,607 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
-2019-09-29 12:35:42,609 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
-2019-09-29 12:36:38,195 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
-2019-09-29 12:36:39,007 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
-2019-09-29 12:36:39,160 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
-2019-09-29 12:36:43,751 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - OS name = mac os x
-2019-09-29 12:36:43,952 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ---------- QUIT BROWSER SUCCESS ----------
-2019-09-29 12:37:07,553 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 1: Input username
-2019-09-29 12:37:07,690 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 2: Input password
-2019-09-29 12:37:07,779 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 3: Click Button
-2019-09-29 12:37:08,256 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 4: Verify Welcome Msg displayed
-2019-09-29 12:37:10,932 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED==
-2019-09-29 12:37:10,932 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 5: Verify USERID displayed
-2019-09-29 12:37:11,423 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED==
-2019-09-29 12:37:11,423 INFO  com.bankguru.validation.Validation_02_EditCustomer - LOGIN - STEP 6: Open New Customer
-2019-09-29 12:37:11,799 INFO  com.bankguru.validation.Validation_02_EditCustomer - CREATE NEW CUSTOMER - STEP 7: Fill valid data in the fields
-2019-09-29 12:37:14,791 INFO  com.bankguru.validation.Validation_02_EditCustomer - CREATE NEW CUSTOMER - STEP 8: Click Submit button
-2019-09-29 12:37:18,158 INFO  com.bankguru.validation.Validation_02_EditCustomer - CREATE NEW CUSTOMER - STEP 9: Verify valid data in the fields is displayed
-2019-09-29 12:37:18,547 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED==
-2019-09-29 12:37:18,547 INFO  com.bankguru.validation.Validation_02_EditCustomer - CREATE NEW CUSTOMER - STEP 10: Verify valid data in the fields is displayed
-2019-09-29 12:37:18,652 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = nhanpv
-2019-09-29 12:37:18,653 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = nhanpv
-2019-09-29 12:37:18,653 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:18,653 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:18,839 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = 1994-01-01
-2019-09-29 12:37:18,840 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = 1994-01-01
-2019-09-29 12:37:18,841 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:18,841 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:18,908 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = 29 ho xuan huong
-2019-09-29 12:37:18,908 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = 29 ho xuan huong
-2019-09-29 12:37:18,908 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:18,908 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:18,953 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = da nang
-2019-09-29 12:37:18,954 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = da nang
-2019-09-29 12:37:18,954 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:18,954 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:19,021 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = my an
-2019-09-29 12:37:19,022 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = my an
-2019-09-29 12:37:19,022 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:19,022 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:19,071 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = 324567
-2019-09-29 12:37:19,072 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = 324567
-2019-09-29 12:37:19,072 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:19,072 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:19,112 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = 0935602450
-2019-09-29 12:37:19,112 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = 0935602450
-2019-09-29 12:37:19,112 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:19,112 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:19,201 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = b123iznvneadsdsaa321@gmal.com
-2019-09-29 12:37:19,201 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = b123iznvneadsdsaa321@gmal.com
-2019-09-29 12:37:19,201 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:19,201 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:19,201 INFO  com.bankguru.validation.Validation_02_EditCustomer - CREATE NEW CUSTOMER - STEP 11: Get CUSTOMERID
-2019-09-29 12:37:19,262 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 12: Open Edit Customer page
-2019-09-29 12:37:19,566 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 13: Verify Edit Customer page is displayed
-2019-09-29 12:37:23,209 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED==
-2019-09-29 12:37:23,209 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 14: Fill CustomerID
-2019-09-29 12:37:23,298 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 15: Click Submit button
-2019-09-29 12:37:29,790 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill Addr
-2019-09-29 12:37:30,253 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:30,387 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify Address cannot be empty is displayed
-2019-09-29 12:37:30,448 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Address Field must not be blank
-2019-09-29 12:37:30,449 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Address Field must not be blank
-2019-09-29 12:37:30,449 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:30,449 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:30,451 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill City
-2019-09-29 12:37:30,525 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:30,669 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify City cannot be empty is displayed
-2019-09-29 12:37:30,711 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = City Field must not be blank
-2019-09-29 12:37:30,712 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = City Field must not be blank
-2019-09-29 12:37:30,712 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:30,712 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:30,713 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill numberic in City
-2019-09-29 12:37:30,842 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify City cannot contain number is displayed
-2019-09-29 12:37:30,905 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Numbers are not allowed
-2019-09-29 12:37:30,906 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Numbers are not allowed
-2019-09-29 12:37:30,906 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:30,906 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:30,908 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill special chars in City
-2019-09-29 12:37:31,068 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify City cannot contain special chars is displayed
-2019-09-29 12:37:31,109 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Special characters are not allowed
-2019-09-29 12:37:31,109 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Special characters are not allowed
-2019-09-29 12:37:31,109 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:31,109 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:31,110 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill State
-2019-09-29 12:37:31,215 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:31,786 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify State cannot be empty is displayed
-2019-09-29 12:37:31,839 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = State must not be blank
-2019-09-29 12:37:31,839 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = State must not be blank
-2019-09-29 12:37:31,839 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:31,839 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:31,841 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill numberic in State
-2019-09-29 12:37:31,969 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify State cannot contain number is displayed
-2019-09-29 12:37:32,029 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Numbers are not allowed
-2019-09-29 12:37:32,029 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Numbers are not allowed
-2019-09-29 12:37:32,029 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:32,029 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:32,032 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill special chars in State
-2019-09-29 12:37:32,151 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify State cannot contain special chars is displayed
-2019-09-29 12:37:32,249 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Special characters are not allowed
-2019-09-29 12:37:32,249 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Special characters are not allowed
-2019-09-29 12:37:32,249 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:32,250 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:32,253 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill Pin
-2019-09-29 12:37:32,369 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:32,516 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify Pin cannot be empty is displayed
-2019-09-29 12:37:32,553 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = PIN Code must not be blank
-2019-09-29 12:37:32,553 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = PIN Code must not be blank
-2019-09-29 12:37:32,553 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:32,553 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:32,554 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill chars in Pin
-2019-09-29 12:37:32,655 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify Pin cannot contain chars is displayed
-2019-09-29 12:37:32,724 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Characters are not allowed
-2019-09-29 12:37:32,725 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Characters are not allowed
-2019-09-29 12:37:32,725 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:32,725 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:32,728 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill less than 6digits in Pin
-2019-09-29 12:37:32,821 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify Pin cannot less than 6digits is displayed
-2019-09-29 12:37:32,883 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = PIN Code must have 6 Digits
-2019-09-29 12:37:32,883 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = PIN Code must have 6 Digits
-2019-09-29 12:37:32,883 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:32,883 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:32,886 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill special chars in Pin
-2019-09-29 12:37:33,003 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify Pin cannot contains special chars is displayed
-2019-09-29 12:37:33,066 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Special characters are not allowed
-2019-09-29 12:37:33,066 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Special characters are not allowed
-2019-09-29 12:37:33,066 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:33,067 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:33,068 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill Telephone
-2019-09-29 12:37:33,136 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:33,278 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify Telephone cannot be empty is displayed
-2019-09-29 12:37:33,316 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Mobile no must not be blank
-2019-09-29 12:37:33,316 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Mobile no must not be blank
-2019-09-29 12:37:33,316 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:33,316 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:33,318 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill special chars in Telephone
-2019-09-29 12:37:33,406 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify Telephone cannot contains special chars is displayed
-2019-09-29 12:37:33,465 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Special characters are not allowed
-2019-09-29 12:37:33,465 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Special characters are not allowed
-2019-09-29 12:37:33,465 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:33,465 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:33,467 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Dont fill Email
-2019-09-29 12:37:33,548 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Press Tab
-2019-09-29 12:37:33,675 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 3: Verify Email cannot be empty is displayed
-2019-09-29 12:37:33,715 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Email-ID must not be blank
-2019-09-29 12:37:33,715 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Email-ID must not be blank
-2019-09-29 12:37:33,715 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:33,715 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:33,716 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 1: Fill incorrect format in Email
-2019-09-29 12:37:33,808 INFO  com.bankguru.validation.Validation_02_EditCustomer - EDIT CUSTOMER - STEP 2: Verify Email cannot incorrect format is displayed
-2019-09-29 12:37:33,869 INFO  com.bankguru.validation.Validation_02_EditCustomer - Actual = Email-ID is not valid
-2019-09-29 12:37:33,869 INFO  com.bankguru.validation.Validation_02_EditCustomer - Expected = Email-ID is not valid
-2019-09-29 12:37:33,869 INFO  com.bankguru.validation.Validation_02_EditCustomer - Compare value = true
-2019-09-29 12:37:33,869 INFO  com.bankguru.validation.Validation_02_EditCustomer - ===PASSED===
-2019-09-29 12:37:33,870 INFO  com.bankguru.validation.Validation_02_EditCustomer - OS name = mac os x
-2019-09-29 12:37:34,139 INFO  com.bankguru.validation.Validation_02_EditCustomer - ---------- QUIT BROWSER SUCCESS ----------
+2019-10-09 15:21:24,922 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 1 Verify login page is displayed
+2019-10-09 15:21:25,894 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ===PASSED==
+2019-10-09 15:21:25,896 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 2 Click to HERE LINK
+2019-10-09 15:21:26,677 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 3 Input to Email ID Textbox
+2019-10-09 15:21:29,516 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 4 Click to Submit button
+2019-10-09 15:21:30,341 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - REGISTER - STEP: 5 Get username/ password infor
+2019-10-09 15:21:31,688 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - OS name = mac os x
+2019-10-09 15:21:31,915 INFO  com.bankguru.commons.Commons_01_RegisterToSystem - ---------- QUIT BROWSER SUCCESS ----------
+2019-10-09 15:21:42,139 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 1: Input username
+2019-10-09 15:21:43,642 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 2: Input password
+2019-10-09 15:21:45,029 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 3: Click Button
+2019-10-09 15:21:45,799 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 4: Verify Welcome Msg displayed
+2019-10-09 15:21:47,450 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-10-09 15:21:47,450 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 5: Verify USERID displayed
+2019-10-09 15:21:47,489 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED==
+2019-10-09 15:21:47,489 INFO  com.bankguru.validation.Validation_01_NewCustomer - LOGIN - STEP 6: Open New Customer
+2019-10-09 15:21:48,264 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Press Tab and move to next Field
+2019-10-09 15:21:50,159 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Customer name must not be blank is displayed
+2019-10-09 15:21:50,242 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = 
+2019-10-09 15:21:50,242 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Customer name must not be blank
+2019-10-09 15:21:50,242 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = false
+2019-10-09 15:21:50,242 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===FAILED===
+2019-10-09 15:21:50,480 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Input numberic value in Name Field
+2019-10-09 15:21:51,138 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Numbers are not allowed is displayed
+2019-10-09 15:21:51,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:21:51,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:21:51,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:51,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:51,228 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Input numberic value in Name Field
+2019-10-09 15:21:52,070 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Verify Numbers are not allowed is displayed
+2019-10-09 15:21:52,321 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:21:52,321 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:21:52,321 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:52,321 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:52,323 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Input special chars into Name Field
+2019-10-09 15:21:53,305 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify Special chars are not allowed is displayed
+2019-10-09 15:21:53,367 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:21:53,367 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:21:53,367 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:53,367 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:53,367 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 3: Input special chars into Name Field
+2019-10-09 15:21:54,083 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 4: Verify Special chars are not allowed is displayed
+2019-10-09 15:21:54,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:21:54,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:21:54,136 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:54,137 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:54,138 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 1: Dont input into Name Field
+2019-10-09 15:21:54,909 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - NAME - STEP 2: Verify First chars cannot be space is displayed
+2019-10-09 15:21:55,183 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:21:55,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:21:55,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:55,184 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:55,188 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Dont input data into Address
+2019-10-09 15:21:55,679 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify Address cannot be empty is displayed
+2019-10-09 15:21:55,923 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = 
+2019-10-09 15:21:55,923 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Address Field must not be blank
+2019-10-09 15:21:55,923 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = false
+2019-10-09 15:21:55,924 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===FAILED===
+2019-10-09 15:21:56,118 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 1: Input Fisrt chars as blank space
+2019-10-09 15:21:56,871 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - ADDRESS - STEP 2: Verify First chars cannot be space is displayed
+2019-10-09 15:21:56,964 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:21:56,964 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:21:56,965 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:56,965 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:56,971 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Dont input data into City Field
+2019-10-09 15:21:57,312 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify City Field must be not blank
+2019-10-09 15:21:57,443 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = City Field must not be blank
+2019-10-09 15:21:57,443 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = City Field must not be blank
+2019-10-09 15:21:57,443 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:57,444 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:57,447 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Input numberic into City Field
+2019-10-09 15:21:58,291 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify Numbers are not allowed
+2019-10-09 15:21:58,500 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:21:58,500 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:21:58,500 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:58,500 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:58,500 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Input numberic into City Field
+2019-10-09 15:21:59,497 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Verify Numbers are not allowed
+2019-10-09 15:21:59,599 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:21:59,599 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:21:59,599 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:21:59,599 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:21:59,603 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Input special chars into City Field
+2019-10-09 15:22:00,474 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify Special chars are not allowed is displayed
+2019-10-09 15:22:00,545 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:00,545 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:00,545 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:00,545 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:00,546 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 3: Input special chars into City Field
+2019-10-09 15:22:01,531 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 4: Verify Special chars are not allowed is displayed
+2019-10-09 15:22:01,664 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:01,664 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:01,664 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:01,664 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:01,666 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 1: Input data hava first Blank Space
+2019-10-09 15:22:02,608 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - CITY - STEP 2: Verify First character cannot be space
+2019-10-09 15:22:02,712 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:22:02,713 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:22:02,713 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:02,713 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:02,715 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Dont input data into State Field
+2019-10-09 15:22:03,129 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify State must not be blank
+2019-10-09 15:22:03,274 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = State must not be blank
+2019-10-09 15:22:03,274 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = State must not be blank
+2019-10-09 15:22:03,275 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:03,275 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:03,281 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Input number into State Field
+2019-10-09 15:22:04,043 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify Numbers are not allowed is displayed
+2019-10-09 15:22:04,178 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:22:04,178 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:22:04,180 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:04,181 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:04,181 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Input number into State Field
+2019-10-09 15:22:05,018 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Verify Numbers are not allowed is displayed
+2019-10-09 15:22:05,100 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Numbers are not allowed
+2019-10-09 15:22:05,100 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Numbers are not allowed
+2019-10-09 15:22:05,100 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:05,100 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:05,101 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Input Special Chras into State Field
+2019-10-09 15:22:05,839 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify State cannot have special chars is displayed
+2019-10-09 15:22:05,907 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:05,908 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:05,908 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:05,908 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:05,908 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 3: Input Special Chras into State Field
+2019-10-09 15:22:06,654 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 4: Verify State cannot have special chars is displayed
+2019-10-09 15:22:06,754 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:06,754 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:06,755 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:06,755 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:06,760 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 1: Input First blank space into State Field
+2019-10-09 15:22:07,544 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - STATE - STEP 2: Verify State cannot have first blank space
+2019-10-09 15:22:07,622 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:22:07,622 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:22:07,623 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:07,623 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:07,624 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: TAB out Pin Field
+2019-10-09 15:22:08,421 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin cannot be Empty is displayed
+2019-10-09 15:22:08,615 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = PIN Code must not be blank
+2019-10-09 15:22:08,616 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = PIN Code must not be blank
+2019-10-09 15:22:08,616 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:08,616 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:08,617 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input not number into Pin Field
+2019-10-09 15:22:09,754 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must be numberic is displayed
+2019-10-09 15:22:09,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Characters are not allowed
+2019-10-09 15:22:09,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Characters are not allowed
+2019-10-09 15:22:09,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:09,877 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:09,879 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input less than 6 digits into Pin Field
+2019-10-09 15:22:10,657 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin must have 6 digits is displayed
+2019-10-09 15:22:10,772 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = PIN Code must have 6 Digits
+2019-10-09 15:22:10,773 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = PIN Code must have 6 Digits
+2019-10-09 15:22:10,773 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:10,774 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:10,775 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input special chars into Pin Field
+2019-10-09 15:22:11,568 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin cannt have special chars
+2019-10-09 15:22:11,685 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:11,686 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:11,686 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:11,686 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:11,690 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 1: Input first blank space into Pin Field
+2019-10-09 15:22:12,412 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - PIN - STEP 2: Verify Pin cannot have first blank space
+2019-10-09 15:22:12,490 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:22:12,490 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:22:12,490 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:12,490 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:12,491 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Dont input data into Telephone
+2019-10-09 15:22:12,723 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot be empty
+2019-10-09 15:22:12,905 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Mobile no must not be blank
+2019-10-09 15:22:12,905 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Mobile no must not be blank
+2019-10-09 15:22:12,906 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:12,906 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:12,913 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Input first blank space into Telephone Field
+2019-10-09 15:22:13,614 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot have first blank space
+2019-10-09 15:22:13,720 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = First character can not have space
+2019-10-09 15:22:13,720 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = First character can not have space
+2019-10-09 15:22:13,720 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:13,720 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:13,722 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Input data have spaces into Telephone Field
+2019-10-09 15:22:14,575 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify Telephone cannot have spaces
+2019-10-09 15:22:14,708 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Characters are not allowed
+2019-10-09 15:22:14,708 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Characters are not allowed
+2019-10-09 15:22:14,708 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:14,708 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:14,710 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 1: Input data in State Field
+2019-10-09 15:22:15,754 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - TELEPHONE - STEP 2: Verify data in State Field
+2019-10-09 15:22:15,957 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Special characters are not allowed
+2019-10-09 15:22:15,957 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Special characters are not allowed
+2019-10-09 15:22:15,957 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:15,957 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:15,961 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Dont input data into Email Field
+2019-10-09 15:22:16,296 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify email cannot be empty is displayed
+2019-10-09 15:22:16,483 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Email-ID must not be blank
+2019-10-09 15:22:16,484 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Email-ID must not be blank
+2019-10-09 15:22:16,484 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:16,484 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:16,488 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Input invalid email into Email Field
+2019-10-09 15:22:17,302 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 2: Verify Email must be in correct format is displayed
+2019-10-09 15:22:17,401 INFO  com.bankguru.validation.Validation_01_NewCustomer - Actual = Email-ID is not valid
+2019-10-09 15:22:17,401 INFO  com.bankguru.validation.Validation_01_NewCustomer - Expected = Email-ID is not valid
+2019-10-09 15:22:17,401 INFO  com.bankguru.validation.Validation_01_NewCustomer - Compare value = true
+2019-10-09 15:22:17,401 INFO  com.bankguru.validation.Validation_01_NewCustomer - ===PASSED===
+2019-10-09 15:22:17,403 INFO  com.bankguru.validation.Validation_01_NewCustomer - NEW CUSTOMER - EMAIL - STEP 1: Input data have space into Mail
+2019-10-09 15:22:47,942 INFO  com.bankguru.validation.Validation_01_NewCustomer - OS name = mac os x
+2019-10-09 15:22:48,188 INFO  com.bankguru.validation.Validation_01_NewCustomer - ---------- QUIT BROWSER SUCCESS ----------

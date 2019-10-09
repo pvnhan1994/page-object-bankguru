@@ -1,4 +1,4 @@
-package commons;
+package configReportHTML;
 
 import java.io.File;
 import java.util.Calendar;

@@ -61,5 +61,9 @@ public class LoginPageObject extends AbstractPage {
 		waitForElementVisible(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
 		return isControlDisplayed(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
 	}
+	public String get(String name) {
+		waitForElementVisible(driver, LoginPageUI.DELETE_CUSTOMER_FORM);
+		return getAttributeValue(driver, LoginPageUI.DELETE_CUSTOMER_FORM, name);
+	}
 
 }

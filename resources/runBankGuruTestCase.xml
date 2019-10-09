@@ -5,13 +5,14 @@
  	<listeners>
  		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
  		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
- 		<listener class-name="commons.ExtentReportListener"/>
+ 		<listener class-name="configReportHTML.ExtentReportListener"/>
+ 		<listener class-name="configReportHTML.ReportNGListener"/>
  	</listeners>
   <test name="Run on FIREFOX">
 	<parameter name="browser" value="firefox"></parameter>
     <classes>
     		<class name="com.bankguru.commons.Commons_01_RegisterToSystem"/>
-      		<class name="com.bankguru.validation.Validation_02_EditCustomer"/>
+      		<class name="com.bankguru.validation.Validation_01_NewCustomer"/>
     </classes>
   </test> 
   

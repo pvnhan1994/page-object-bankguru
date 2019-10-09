@@ -1,6 +1,5 @@
 package commons;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -77,23 +76,27 @@ public class AbstractPage {
 
 	// WebElement
 	public void clickToElement(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		element.click();
 	}
 
 	public void clickToElement(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		element.click();
 	}
 
 	public void sendkeyElement(WebDriver driver, String locator, String value) {
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		element.clear();
 		element.sendKeys(value);
 	}
 	public void sendkeyElement(WebDriver driver, String locator, String value, String...values) {
 		locator = String.format(locator, (Object[]) values);
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		element.clear();
 		element.sendKeys(value);
@@ -187,12 +190,14 @@ public class AbstractPage {
 	}
 
 	public boolean isControlDisplayed(WebDriver driver, String locator) {
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
 	}
 
 	public boolean isControlDisplayed(WebDriver driver, String locator, String... values) {
 		locator = String.format(locator, (Object[]) values);
+		highlightElement(driver, locator);
 		element = driver.findElement(By.xpath(locator));
 		return element.isDisplayed();
 	}
@@ -397,6 +402,21 @@ public class AbstractPage {
 	public void overrideGlobalTimeOut(WebDriver driver, int timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
+	public void highlightElement(WebDriver driver, String locator){
+		javascriptExecutor = (JavascriptExecutor) driver;
+		element = driver.findElement(By.xpath(locator));
+		String originalStyle = element.getAttribute("style");
+		javascriptExecutor.executeScript("arguments[0].setAttribute(arguments[1],arguments[2])",element,"style","border:3px solid red; border-style:dashed;");
+		try {
+			Thread.sleep(500);
+
+		}catch(InterruptedException e){
+			e.printStackTrace();
+		}
+		javascriptExecutor.executeScript("arguments[0].setAttribute(arguments[1],arguments[2])",element,"style",originalStyle);
+	}
+
+
 
 	// PageUI
 	public NewAccountPageObject openNewAccountPage(WebDriver driver) {
